@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Playfair_Display, Inter } from "next/font/google";
 import { JsonLd, legalServiceSchema } from "./components/StructuredData";
 import StickyCTA from "./components/StickyCTA";
@@ -68,6 +69,19 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <JsonLd data={legalServiceSchema} />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-EJVY8C3R7H"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-EJVY8C3R7H');
+          `}
+        </Script>
       </head>
       <body
         className="min-h-screen"
