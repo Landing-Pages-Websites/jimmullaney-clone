@@ -5,16 +5,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Uncontested Divorce in Jacksonville, FL | A. James Mullaney",
+    "Uncontested Divorce Jacksonville FL | A. James Mullaney",
   description:
-    "Jacksonville uncontested divorce attorney with 25+ years of experience. Flat-fee representation, comprehensive marital settlement agreements, and a single final hearing.",
+    "Filing for uncontested divorce in Jacksonville FL? Flat fee $2,000-$3,000, finalize in 4-6 weeks. A. James Mullaney handles all the paperwork for you.",
   alternates: {
     canonical: "/divorce/uncontested-divorce-in-jacksonville-fl",
   },
   openGraph: {
-    title: "Uncontested Divorce in Jacksonville, FL",
+    title: "Uncontested Divorce Jacksonville FL | A. James Mullaney",
     description:
-      "Jacksonville uncontested divorce attorney with 25+ years of experience.",
+      "Filing for uncontested divorce in Jacksonville FL? Flat fee $2,000-$3,000, finalize in 4-6 weeks. A. James Mullaney handles all the paperwork for you.",
     url: "/divorce/uncontested-divorce-in-jacksonville-fl",
   },
 };
