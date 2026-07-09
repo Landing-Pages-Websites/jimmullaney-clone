@@ -3,6 +3,7 @@ import InlineCTA from "../components/InlineCTA";
 import CalconicEmbed from "../components/CalconicEmbed";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { JsonLd } from "../components/StructuredData";
 
 export const metadata: Metadata = {
   title: "A Free 2026 Florida Child Support Calculator | Jacksonville Family Law",
@@ -14,9 +15,91 @@ export const metadata: Metadata = {
 /** The firm's Calconic calculator ID (pulled from the live site embed). */
 const CALCULATOR_ID = "5d30a3c5d25e57001e57c9f7";
 
+/** WebApplication + SoftwareApplication schema describing the calculator tool. */
+const webApplicationSchema = {
+  "@context": "https://schema.org",
+  "@type": ["WebApplication", "SoftwareApplication"],
+  name: "Florida Child Support Calculator",
+  description:
+    "A free online calculator that estimates Florida child support obligations under Florida Statutes §61.30 guidelines. Uses the Income Shares Model with gross income inputs, tax estimates, and the gross-up formula for shared parenting.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Web",
+  browserRequirements: "Requires JavaScript",
+  author: {
+    "@type": "Person",
+    name: "A. James Mullaney",
+    url: "https://www.jimmullaney.com/attorney/mullaney-a-james",
+  },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+    description: "Free to use. Optional $20 fee for a formal Guidelines Worksheet.",
+  },
+  about: {
+    "@type": "Thing",
+    name: "Florida Child Support",
+  },
+  audience: {
+    "@type": "Audience",
+    audienceType: "Florida parents seeking child support estimates",
+  },
+};
+
+/** FAQPage schema answering common questions about Florida child support calculations. */
+const faqPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How is child support calculated in Florida?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Florida uses the Income Shares Model under Florida Statutes 61.30. Each parent's gross monthly income is entered, federal tax and FICA are estimated, and allowable deductions (health insurance, child care, union dues, mandatory retirement, existing court-ordered support) are subtracted to determine net monthly income. Combined net income and the number of children determine the minimum monthly need from the Florida schedule. Each parent's share equals their percentage of combined net income.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the gross-up formula in Florida child support?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Under Florida Statutes 61.30(11)(b), if both parents have at least 20 percent of the overnights (73 or more nights per year), the minimum monthly need is multiplied by 1.5, and each parent receives a credit for the time they spend with the child. This formula significantly reduces the monthly obligation for the paying parent in shared-parenting arrangements.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why do most online child support calculators produce inaccurate results for Florida?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Two problems cause most errors. First, many online calculators ask for net income, but most people cannot estimate their net income accurately -- the Florida court program starts from gross income. Second, many calculators fail to account for overnights. Under Florida's current law, the majority of paying parents have 20 percent or more overnights, which triggers the gross-up formula and significantly changes the obligation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does a Florida Child Support Guidelines Worksheet cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The calculator is free to use online. If you need a formal Child Support Guidelines Worksheet for court or mediation, the fee is $20. The worksheet is created manually and is the same type used by courts and mediators. Payment is processed through LawPay.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What information do I need to use the Florida child support calculator?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You will need each parent's monthly gross income, filing status for tax purposes, health insurance costs, child care expenses, union dues or mandatory retirement contributions, any existing court-ordered support obligations, and the number of overnights each parent has with the child (at least 73 nights per year may trigger the shared-parenting gross-up formula).",
+      },
+    },
+  ],
+};
+
 export default function CalculatorPage() {
   return (
-    <InnerPage
+    <>
+      <JsonLd data={webApplicationSchema} />
+      <JsonLd data={faqPageSchema} />
+      <InnerPage
       title="A Free 2026 Florida Child Support Calculator"
       breadcrumbs={[{ label: "Child Support Calculator" }]}
       showSidebar={false}
@@ -128,5 +211,6 @@ export default function CalculatorPage() {
         <Link href="/contact">send me a message</Link>.
       </p>
     </InnerPage>
+    </>
   );
 }
