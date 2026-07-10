@@ -4,9 +4,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jacksonville Alimony Lawyer | Florida Spousal Support Attorney",
+  title: "Alimony Lawyer Jacksonville FL | Florida Spousal Support Attorney",
   description:
-    "Jacksonville alimony attorney with 25+ years of family-law experience. Understand Florida's reformed alimony law, the types of support available, and how amounts are calculated.",
+    "Need an alimony lawyer in Jacksonville, FL? I explain Florida's alimony types, how courts calculate support after the 2023 reform, and what it means for your case.",
   alternates: { canonical: "/divorce/alimony" },
 };
 
@@ -20,9 +20,11 @@ export default function AlimonyPage() {
       ]}
     >
       <p>
-        Alimony &mdash; also called spousal support &mdash; is a payment from
-        one spouse to the other after a divorce. In Florida, alimony exists to
-        help a lower-earning or non-earning spouse transition from married to
+        If you are looking for an <strong>alimony lawyer in Jacksonville, FL</strong>,
+        it helps to understand how Florida law approaches spousal support. Alimony
+        &mdash; also called spousal support &mdash; is a payment from one spouse to
+        the other after a divorce. In Florida, alimony exists to help a lower-earning
+        or non-earning spouse transition from married to
         single life, and, in longer marriages, to allow both spouses to
         maintain a reasonably similar standard of living. Florida&apos;s
         alimony statute was substantially rewritten in 2023, and the new
@@ -143,7 +145,9 @@ export default function AlimonyPage() {
       <p>
         Whether you are seeking alimony, trying to minimize what you pay,
         modifying an existing order, or defending against a
-        supportive-relationship motion, I can help. My practice emphasizes
+        supportive-relationship motion, I can help. As an experienced Jacksonville
+        family law attorney with 25+ years of practice, I understand the nuances of
+        Florida alimony law. My practice emphasizes
         negotiated resolutions through{" "}
         <Link href="/divorce/divorce-mediation-in-jacksonville">mediation</Link>{" "}
         where possible, with the ability to litigate when it is not.
@@ -151,6 +155,17 @@ export default function AlimonyPage() {
       <p>
         Call me at <a href="tel:+1-904-858-4334">904-858-4334</a> or{" "}
         <Link href="/contact">contact me online</Link> for a consultation.
+      </p>
+
+      <InlineCTA
+        title="Schedule Your Consultation"
+        subtitle="Ready to discuss your alimony case? Schedule a consultation to review your situation and explore your options for spousal support."
+      />
+
+      <p>
+        Learn more about{" "}
+        <Link href="/attorney/mullaney-a-james/">A. James Mullaney</Link> and his
+        approach to family law.
       </p>
     </InnerPage>
   );
