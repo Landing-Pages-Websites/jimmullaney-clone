@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
   style: ["normal", "italic"],
 });
 
-const BASE_URL = "https://jimmullaney-clone.vercel.app";
+const BASE_URL = "https://www.jimmullaney.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
