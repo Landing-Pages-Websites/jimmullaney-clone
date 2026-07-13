@@ -36,7 +36,7 @@ export default function PaternityPage() {
         Establishing paternity creates the legal foundation for:
       </p>
       <ul>
-        <li>Enforceable <Link href="/time-sharing-and-visitation-in-florida">time-sharing and a parenting plan</Link></li>
+        <li>Enforceable <Link href="/parenting-plans/">time-sharing and a parenting plan</Link></li>
         <li><Link href="/divorce/child-support">Child support</Link> obligations</li>
         <li>The child&apos;s right to inherit from the father</li>
         <li>The child&apos;s right to Social Security, veterans&apos;, and other benefits through the father</li>
@@ -44,6 +44,10 @@ export default function PaternityPage() {
         <li>Health-insurance coverage through the father&apos;s employer</li>
         <li>The father&apos;s consent being required for adoption or name change</li>
       </ul>
+      <p>
+        Estimate your potential obligation ahead of time with the{" "}
+        <Link href="/florida-child-support-calculator/">free Florida Child Support Calculator</Link>.
+      </p>
 
       <InlineCTA
         title="Start or respond to a paternity case"
