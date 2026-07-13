@@ -164,7 +164,15 @@ export default function ParentingPlansPage() {
       <p>
         Parenting plans are not just for divorce. Every paternity case
         involving a child whose parents are not married also requires an
-        approved plan. See <Link href="/paternity">Paternity</Link>.
+        approved plan. See <Link href="/paternity">Paternity</Link>.{" "}
+        The same case will determine child support under{" "}
+        <Link href="/divorce/child-support/">Florida child support guidelines</Link>.
+      </p>
+
+      <p>
+        Use the{" "}
+        <Link href="/florida-child-support-calculator/">free Florida Child Support Calculator</Link>{" "}
+        to estimate support obligations alongside your parenting plan.
       </p>
 
       <h2>How I Can Help</h2>

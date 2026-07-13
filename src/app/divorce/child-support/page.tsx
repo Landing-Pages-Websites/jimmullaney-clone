@@ -72,7 +72,9 @@ export default function ChildSupportPage() {
           <strong>Gross-up for substantial time-sharing</strong> &mdash; if
           each parent has at least 20% (73+) overnights per year, the
           obligation is multiplied by 1.5 and credited for each
-          parent&apos;s time with the child.
+          parent&apos;s time with the child. Understanding your{" "}
+          <Link href="/parenting-plans/">time-sharing arrangement</Link>{" "}
+          is an essential step when creating a parenting plan.
         </li>
       </ol>
 
@@ -102,7 +104,8 @@ export default function ChildSupportPage() {
         earning less than they reasonably could, Florida law allows the court
         to <strong>impute</strong> income based on recent work history,
         occupational qualifications, and prevailing earnings in the
-        community.
+        community. This issue frequently arises during{" "}
+        <Link href="/paternity/">paternity establishment</Link> cases.
       </p>
 
       <h2>Deviation From the Guidelines</h2>

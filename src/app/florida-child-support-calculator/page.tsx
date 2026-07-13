@@ -129,6 +129,12 @@ export default function CalculatorPage() {
         <a href="tel:+1-904-858-4334">904-858-4334</a>.
       </p>
 
+      <p>
+        For personalized guidance on how your specific situation affects support,{" "}
+        contact a{" "}
+        <Link href="/divorce/child-support/">Jacksonville Child Support Attorney</Link>.
+      </p>
+
       {/* Calconic calculator embed — the same one that powers the live site */}
       <div className="not-prose my-12">
         <CalconicEmbed calculatorId={CALCULATOR_ID} />
@@ -200,6 +206,12 @@ export default function CalculatorPage() {
       <p>
         Submitting your information or paying for a worksheet does not create
         an attorney-client relationship.
+      </p>
+
+      <p>
+        Child support obligations are closely tied to time-sharing arrangements.{" "}
+        See <Link href="/parenting-plans/">Parenting Plans &amp; Time-Sharing</Link>{" "}
+        for more information.
       </p>
 
       <h2>Talk to a Jacksonville Child Support Lawyer</h2>
