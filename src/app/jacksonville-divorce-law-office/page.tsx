@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Jacksonville Divorce Law Office",
   description:
-    "Law Office of A. James Mullaney, 8777 San Jose Blvd. Ste. 302, Jacksonville, FL 32217. Telephone: 904-858-4334.",
+    "Near Baymeadows Road and San Jose Blvd in Jacksonville. Serving NE Florida with divorce mediation, uncontested divorce, and family law. Call 904-858-4334.",
   alternates: { canonical: "/jacksonville-divorce-law-office" }
 };
 
@@ -19,6 +19,7 @@ export default function OfficePage() {
       <div className="grid md:grid-cols-2 gap-12">
         <div>
           <h2>Office Location</h2>
+          <h3>Our Jacksonville Office</h3>
           <p>
             <strong>Law Office of A. James Mullaney</strong>
             <br />
@@ -36,10 +37,38 @@ export default function OfficePage() {
           </p>
           <h2>Parking</h2>
           <p>Free parking is available at the office.</p>
-          <h2>Directions</h2>
+          <h2>Directions to Our San Jose Blvd Office</h2>
           <p>
             My office is conveniently located just north of the intersection of
-            Baymeadows Road and San Jose Boulevard in Jacksonville.
+            Baymeadows Road and San Jose Boulevard in Jacksonville. Our San Jose
+            Blvd office is easily accessible from I-295 and Baymeadows Road.
+          </p>
+          <h2>Divorce &amp; Family Law Services in Jacksonville</h2>
+          <p>
+            From our office near Baymeadows Road in Jacksonville, we serve
+            clients throughout Northeast Florida with divorce mediation,
+            uncontested divorce, and family law matters. Whether you are
+            navigating a divorce, establishing a parenting plan, or seeking
+            modification of an existing order, our San Jose Blvd location
+            provides a comfortable setting to discuss your case and explore
+            resolution options without the stress of a courtroom.
+          </p>
+          <h3>Local Expertise Across Northeast Florida</h3>
+          <p>
+            As a Florida Supreme Court-certified family court mediator with over
+            25 years of experience, I bring deep knowledge of Northeast
+            Florida&apos;s family law landscape to every case. From San Jose
+            Blvd to Baymeadows Road, my practice serves clients across
+            Jacksonville and the surrounding communities with personalized,
+            cost-effective legal representation.
+          </p>
+          <h2>Schedule Your Consultation</h2>
+          <p>
+            Ready to discuss your family law needs? Call{" "}
+            <a href="tel:+1-904-858-4334">904-858-4334</a> or use our{" "}
+            <Link href="/contact">online contact form</Link> to schedule a
+            consultation at our San Jose Blvd office near Baymeadows Road in
+            Jacksonville.
           </p>
         </div>
         <div>
