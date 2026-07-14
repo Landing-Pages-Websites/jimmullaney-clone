@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Jacksonville Divorce Law Office",
   description:
-    "Near Baymeadows Road and San Jose Blvd in Jacksonville. Serving NE Florida with divorce mediation, uncontested divorce, and family law. Call 904-858-4334.",
+    "Near Baymeadows Road & San Jose Blvd in Jacksonville, serving Northeast Florida with divorce mediation, uncontested divorce, and family law. Call 904-858-4334.",
   alternates: { canonical: "/jacksonville-divorce-law-office" }
 };
 
