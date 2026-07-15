@@ -4,15 +4,14 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Jacksonville Divorce Mediation Attorney & Certified Mediator",
+  title: "Divorce Mediation Jacksonville: Certified Attorney & Mediator",
   description:
-    "Jacksonville divorce mediation with a Florida Supreme Court–certified family court mediator. 25+ years of experience resolving family-law disputes outside of court.",
+    "Jacksonville divorce mediation from a certified attorney-mediator. Save 91.5% on average vs. litigated divorce. Florida Supreme Court\u2013certified.",
   alternates: { canonical: "/divorce/divorce-mediation-in-jacksonville" },
   openGraph: {
-    title: "Jacksonville Divorce Mediation Attorney & Certified Mediator",
+    title: "Divorce Mediation Jacksonville: Certified Attorney & Mediator",
     description:
-      "Florida Supreme Court–certified family court mediator with 25+ years of experience.",
+      "Jacksonville divorce mediation from a certified attorney-mediator. Save 91.5% on average vs. litigated divorce. Florida Supreme Court\u2013certified.",
     url: "/divorce/divorce-mediation-in-jacksonville",
   },
 };
