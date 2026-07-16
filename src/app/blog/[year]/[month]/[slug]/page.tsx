@@ -20,7 +20,7 @@ export async function generateMetadata({
   const post = findPost(year, month, slug);
   if (!post) return { title: "Post Not Found" };
   return {
-    title: `${post.title} | Law Office of A. James Mullaney`,
+    title: post.title,
     description: post.excerpt,
     alternates: { canonical: `/blog/${post.year}/${post.month}/${post.slug}` },
     openGraph: {
