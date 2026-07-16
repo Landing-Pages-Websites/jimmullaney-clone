@@ -112,6 +112,54 @@ export const attorneySchema: Record<string, unknown> = {
   worksFor: { "@id": `${BASE_URL}/#business` },
 };
 
+/** FAQPage schema for the /contact page about initial consultation scheduling. */
+export const contactFaqSchema: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How do I schedule an initial consultation with the Law Office of A. James Mullaney?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Call 904-858-4334 or use the contact form on this page to schedule a consultation with a Jacksonville family law attorney.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What information should I have ready when scheduling a consultation?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Have your basic contact information, a brief description of your legal matter, and any relevant documents ready when you call or fill out the contact form.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I schedule a consultation online?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, you can use the contact form on this page to send a message and request a consultation. A member of our office will follow up to confirm your appointment time.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What happens during an initial family law consultation?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "During a consultation, the firm can listen to your situation, discuss your legal options, explain the relevant legal process, and answer your questions about how Florida or Georgia law may apply to your case.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does the Law Office of A. James Mullaney handle cases outside of Jacksonville?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. The firm serves clients throughout Northeast Florida including Duval, Clay, St. Johns, and Nassau counties, and is also licensed in Georgia for clients in Ware, Charlton, and Camden counties. Consultations are available by phone or video conference as well.",
+      },
+    },
+  ],
+};
+
 /** Helper to emit a BreadcrumbList from the breadcrumb trail on inner pages. */
 export function breadcrumbSchema(
   trail: { label: string; href?: string }[],

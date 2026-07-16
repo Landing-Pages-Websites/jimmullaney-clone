@@ -1,4 +1,5 @@
 import InnerPage from "../components/InnerPage";
+import { JsonLd, contactFaqSchema } from "../components/StructuredData";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,6 +11,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
+    <>
+    <JsonLd data={contactFaqSchema} />
     <InnerPage
       title="Contact Law Office of A. James Mullaney"
       breadcrumbs={[{ label: "Contact" }]}
@@ -92,6 +95,58 @@ export default function ContactPage() {
           </form>
         </div>
       </div>
+
+      <section className="mt-16">
+        <h2>Contact and Consultation FAQs</h2>
+
+        <div className="space-y-8 mt-8">
+          <div>
+            <h3 className="font-semibold text-lg mb-2">
+              How do I schedule an initial consultation with the Law Office of A. James Mullaney?
+            </h3>
+            <p>
+              Call 904-858-4334 or use the contact form on this page to schedule a consultation with a Jacksonville family law attorney.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-lg mb-2">
+              What information should I have ready when scheduling a consultation?
+            </h3>
+            <p>
+              Have your basic contact information, a brief description of your legal matter, and any relevant documents ready when you call or fill out the contact form.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-lg mb-2">
+              Can I schedule a consultation online?
+            </h3>
+            <p>
+              Yes, you can use the contact form on this page to send a message and request a consultation. A member of our office will follow up to confirm your appointment time.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-lg mb-2">
+              What happens during an initial family law consultation?
+            </h3>
+            <p>
+              During a consultation, the firm can listen to your situation, discuss your legal options, explain the relevant legal process, and answer your questions about how Florida or Georgia law may apply to your case.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-lg mb-2">
+              Does the Law Office of A. James Mullaney handle cases outside of Jacksonville?
+            </h3>
+            <p>
+              Yes. The firm serves clients throughout Northeast Florida including Duval, Clay, St. Johns, and Nassau counties, and is also licensed in Georgia for clients in Ware, Charlton, and Camden counties. Consultations are available by phone or video conference as well.
+            </p>
+          </div>
+        </div>
+      </section>
     </InnerPage>
+    </>
   );
 }
