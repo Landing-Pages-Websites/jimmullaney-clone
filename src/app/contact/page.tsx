@@ -2,6 +2,8 @@ import InnerPage from "../components/InnerPage";
 import { JsonLd, contactFaqSchema } from "../components/StructuredData";
 import type { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Contact a Jacksonville Family Law Attorney | Schedule a Consultation",
   description:
