@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     default:
-      "Jacksonville Divorce & Family Law Attorney | Law Office of A. James Mullaney",
-    template: "%s | Law Office of A. James Mullaney",
+      "Jacksonville Family Law & Divorce Lawyer | A. James Mullaney",
+    template: "%s | A. James Mullaney",
   },
   description:
-    "Jacksonville family-law attorney and Florida Supreme Court-certified mediator with 25+ years of experience in uncontested divorce, mediation, and parenting plans. Call 904-858-4334.",
-  applicationName: "Law Office of A. James Mullaney",
+    "Jacksonville family law & divorce attorney, 25+ years. Flat-fee uncontested divorce from $2,414 total. Compassionate, efficient guidance. Call 904-858-4334.",
+  applicationName: "A. James Mullaney",
   authors: [{ name: "A. James Mullaney" }],
   keywords: [
     "Jacksonville family law attorney",
@@ -40,11 +40,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
     title:
-      "Jacksonville Divorce & Family Law Attorney | Law Office of A. James Mullaney",
+      "Jacksonville Family Law & Divorce Lawyer | A. James Mullaney",
     description:
-      "Jacksonville family-law attorney and certified mediator with 25+ years of experience. Focused on uncontested divorce and mediation.",
+      "Jacksonville family law & divorce attorney, 25+ years. Flat-fee uncontested divorce from $2,414 total. Compassionate, efficient guidance.",
     url: BASE_URL,
-    siteName: "Law Office of A. James Mullaney",
+    siteName: "A. James Mullaney",
     locale: "en_US",
     type: "website",
     images: [{ url: "/images/jacksonville-hero.jpg" }],
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Jacksonville Divorce & Family Law Attorney | Law Office of A. James Mullaney",
+      "Jacksonville Family Law & Divorce Lawyer | A. James Mullaney",
     description:
-      "Jacksonville family-law attorney and certified mediator with 25+ years of experience.",
+      "Jacksonville family law & divorce attorney, 25+ years. Flat-fee uncontested divorce from $2,414 total. Compassionate, efficient guidance.",
     images: ["/images/jacksonville-hero.jpg"],
   },
   robots: { index: true, follow: true },
