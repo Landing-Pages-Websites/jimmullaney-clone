@@ -16,6 +16,8 @@ import {
   UncontestedDivorceIcon,
 } from "./components/PracticeIcons";
 
+export const dynamic = "force-dynamic";
+
 /* ─── Hero Section ─── */
 function Hero() {
   return (
