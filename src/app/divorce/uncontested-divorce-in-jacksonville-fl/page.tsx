@@ -3,6 +3,8 @@ import InlineCTA from "../../components/InlineCTA";
 import Link from "next/link";
 import type { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Uncontested Divorce Jacksonville Florida",
   description:
