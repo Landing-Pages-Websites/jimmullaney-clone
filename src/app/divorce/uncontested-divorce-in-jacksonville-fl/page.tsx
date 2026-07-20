@@ -4,17 +4,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Uncontested Divorce Jacksonville FL | A. James Mullaney",
+  title: "Uncontested Divorce Jacksonville Florida",
   description:
-    "Filing for uncontested divorce in Jacksonville FL? Flat fee $2,000-$3,000, finalize in 4-6 weeks. A. James Mullaney handles all the paperwork for you.",
+    "Filing for an uncontested divorce in Jacksonville Florida? Attorney flat fee $2,000-$3,000, finalize in 4-6 weeks. A. James Mullaney handles all the paperwork from start to finish.",
   alternates: {
     canonical: "/divorce/uncontested-divorce-in-jacksonville-fl",
   },
   openGraph: {
-    title: "Uncontested Divorce Jacksonville FL | A. James Mullaney",
+    title: "Uncontested Divorce Jacksonville Florida",
     description:
-      "Filing for uncontested divorce in Jacksonville FL? Flat fee $2,000-$3,000, finalize in 4-6 weeks. A. James Mullaney handles all the paperwork for you.",
+      "Filing for an uncontested divorce in Jacksonville Florida? Attorney flat fee $2,000-$3,000, finalize in 4-6 weeks. A. James Mullaney handles all the paperwork from start to finish.",
     url: "/divorce/uncontested-divorce-in-jacksonville-fl",
   },
 };
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
 export default function UncontestedDivorcePage() {
   return (
     <InnerPage
-      title="Uncontested Divorce in Jacksonville, Florida"
+      title="Uncontested Divorce in Jacksonville, Florida - Flat Fee from $2,414"
       breadcrumbs={[
         { label: "Divorce", href: "/divorce" },
         { label: "Uncontested Divorce" },
@@ -35,7 +34,8 @@ export default function UncontestedDivorcePage() {
         plan and time-sharing schedule for any minor children, and the
         calculation of child support. Because there is nothing for a judge to
         decide, an uncontested divorce is dramatically faster, cheaper, and
-        less emotionally draining than a contested case.
+        less emotionally draining than a{" "}
+<Link href="/divorce/contested-divorce">contested case</Link>.
       </p>
 
       <p>
@@ -45,6 +45,10 @@ export default function UncontestedDivorcePage() {
         comprehensive marital settlement agreements, filing the paperwork
         with the Duval County Clerk of Court, and handling the brief final
         hearing before a Florida judge.
+      </p>
+
+      <p className="text-lg font-semibold text-[#0021A5]">
+        My flat fee for an uncontested divorce is <strong>$2,000 to $3,000</strong> (plus the $414 court filing fee), and most cases are final within 4 to 6 weeks. That typically saves you $12,000 to $47,000 or more compared to a contested divorce.
       </p>
 
       <h2>Why Most Divorcing Couples Should Consider Uncontested Divorce</h2>
@@ -92,7 +96,12 @@ export default function UncontestedDivorcePage() {
           division, debt division,{" "}
           <Link href="/divorce/alimony">alimony</Link>,{" "}
           <Link href="/divorce/child-support">child support</Link>, and a
-          parenting plan for minor children.
+          parenting plan for minor children.{" "}
+          Use the{" "}
+          <Link href="/florida-child-support-calculator">
+            Florida Child Support Calculator
+          </Link>{" "}
+          to estimate your monthly obligation before the MSA is drafted.
         </li>
         <li>
           <strong>Full disclosure:</strong> Both parties must exchange
@@ -152,6 +161,14 @@ export default function UncontestedDivorcePage() {
           Dissolution. You are officially divorced.
         </li>
       </ol>
+
+      <p>
+        If you and your spouse have not yet reached full agreement,{" "}
+        <Link href="/divorce/divorce-mediation-in-jacksonville">
+          divorce mediation
+        </Link>{" "}
+        can help you resolve remaining issues without the cost of litigation.
+      </p>
 
       <h2>How Long Does an Uncontested Divorce Take in Jacksonville?</h2>
       <p>
