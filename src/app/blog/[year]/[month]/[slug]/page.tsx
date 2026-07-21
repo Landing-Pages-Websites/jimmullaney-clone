@@ -5,6 +5,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { posts, findPost } from "../../../posts";
 
+export const dynamic = "force-dynamic";
+
 type Params = { year: string; month: string; slug: string };
 
 export async function generateStaticParams(): Promise<Params[]> {
