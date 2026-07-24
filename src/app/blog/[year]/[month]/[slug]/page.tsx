@@ -6,7 +6,8 @@ import { notFound } from "next/navigation";
 import { posts, findPost } from "../../../posts";
 
 export const dynamic = "force-dynamic";
-export const revalidate = 0; // prevent stale ISR cache
+// Force dynamic rendering — no ISR so the build-404 cannot be cached forever
+export const revalidate = 0;
 
 type Params = { year: string; month: string; slug: string };
 
