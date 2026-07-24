@@ -6,12 +6,9 @@ import { notFound } from "next/navigation";
 import { posts, findPost } from "../../../posts";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0; // prevent stale ISR cache
 
 type Params = { year: string; month: string; slug: string };
-
-export async function generateStaticParams(): Promise<Params[]> {
-  return posts.map((p) => ({ year: p.year, month: p.month, slug: p.slug }));
-}
 
 export async function generateMetadata({
   params,
