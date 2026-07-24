@@ -5,8 +5,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { posts, findPost } from "../../../posts";
 
+// Fully dynamic — no ISR prerender caching
 export const dynamic = "force-dynamic";
-// Force dynamic rendering — no ISR so the build-404 cannot be cached forever
+export const fetchCache = "default-no-store";
 export const revalidate = 0;
 
 type Params = { year: string; month: string; slug: string };
