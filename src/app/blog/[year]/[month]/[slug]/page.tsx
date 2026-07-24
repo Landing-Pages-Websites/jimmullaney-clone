@@ -5,10 +5,12 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { posts, findPost } from "../../../posts";
 
-// Fully dynamic — no ISR prerender caching
+// Fully dynamic — no ISR prerender caching. Vercel ISR purge fix 4 2026-07-24
 export const dynamic = "force-dynamic";
 export const fetchCache = "default-no-store";
 export const revalidate = 0;
+// Use route segment config to ensure Vercel does not ISR-cache this route
+export const runtime = "nodejs";
 
 type Params = { year: string; month: string; slug: string };
 
