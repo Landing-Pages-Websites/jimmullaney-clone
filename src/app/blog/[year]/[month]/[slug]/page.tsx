@@ -9,6 +9,8 @@ import { posts, findPost } from "../../../posts";
 export const dynamic = "force-dynamic";
 export const fetchCache = "default-no-store";
 export const revalidate = 0;
+// Disable all caching layers
+export const preferredRegion = "auto";
 // Use route segment config to ensure Vercel does not ISR-cache this route
 export const runtime = "nodejs";
 
