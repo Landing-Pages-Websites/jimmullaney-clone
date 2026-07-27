@@ -1,6 +1,7 @@
 import InnerPage from "../../../../components/InnerPage";
 import InlineCTA from "../../../../components/InlineCTA";
 import Link from "next/link";
+import { JsonLd } from "../../../../components/StructuredData";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { posts, findPost } from "../../../posts";
@@ -47,6 +48,26 @@ export default async function BlogPostPage({
 
   if (!post) notFound();
 
+  // Article schema for every blog post
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: "A. James Mullaney",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Law Office of A. James Mullaney",
+    },
+  };
+
+  // FAQPage schema for posts with a "Frequently Asked Questions" section
+  const faqPageSchema = buildFaqSchema(post.body);
+
   // Related posts: 3 most-recent posts that aren't this one
   const related = posts
     .filter((p) => p !== post)
@@ -54,50 +75,110 @@ export default async function BlogPostPage({
     .slice(0, 3);
 
   return (
-    <InnerPage
-      title={post.title}
-      breadcrumbs={[{ label: "Blog", href: "/blog" }, { label: post.title }]}
-    >
-      <p className="text-sm text-gray-500 italic mb-6 mt-0">{post.date}</p>
+    <>
+      <JsonLd data={articleSchema} />
+      {faqPageSchema && <JsonLd data={faqPageSchema} />}
+      <InnerPage
+        title={post.title}
+        breadcrumbs={[{ label: "Blog", href: "/blog" }, { label: post.title }]}
+      >
+        <p className="text-sm text-gray-500 italic mb-6 mt-0">{post.date}</p>
 
-      {post.body.map((paragraph, i) => {
-        // Drop an InlineCTA after the 3rd paragraph so readers who scanned
-        // the opening have a conversion path before the related-posts list.
-        const insertCTAAfter = Math.min(3, Math.floor(post.body.length / 2));
-        return (
-          <div key={i}>
-            <p dangerouslySetInnerHTML={{ __html: paragraph }} />
-            {i === insertCTAAfter && post.body.length > 4 && (
-              <InlineCTA
-                title={`Questions about ${post.title.split("?")[0].split(":")[0].trim().slice(0, 70)}?`}
-                subtitle="Get a direct, no-pressure answer from a family-law attorney with 25+ years of Florida experience."
-              />
-            )}
-          </div>
-        );
-      })}
+        {post.body.map((paragraph, i) => {
+          // Drop an InlineCTA after the 3rd paragraph so readers who scanned
+          // the opening have a conversion path before the related-posts list.
+          const insertCTAAfter = Math.min(3, Math.floor(post.body.length / 2));
+          return (
+            <div key={i}>
+              <p dangerouslySetInnerHTML={{ __html: paragraph }} />
+              {i === insertCTAAfter && post.body.length > 4 && (
+                <InlineCTA
+                  title={`Questions about ${post.title.split("?")[0].split(":")[0].trim().slice(0, 70)}?`}
+                  subtitle="Get a direct, no-pressure answer from a family-law attorney with 25+ years of Florida experience."
+                />
+              )}
+            </div>
+          );
+        })}
 
-      <InlineCTA />
+        <InlineCTA />
 
-      <hr className="my-10 border-[#03254B]/15" />
+        <hr className="my-10 border-[#03254B]/15" />
 
-      <h2>Related Posts</h2>
-      <ul>
-        {related.map((r) => (
-          <li key={r.slug}>
-            <Link href={`/blog/${r.year}/${r.month}/${r.slug}`}>
-              {r.title}
-            </Link>{" "}
-            <span className="text-gray-500 text-sm">&mdash; {r.date}</span>
-          </li>
-        ))}
-      </ul>
+        <h2>Related Posts</h2>
+        <ul>
+          {related.map((r) => (
+            <li key={r.slug}>
+              <Link href={`/blog/${r.year}/${r.month}/${r.slug}`}>
+                {r.title}
+              </Link>{" "}
+              <span className="text-gray-500 text-sm">&mdash; {r.date}</span>
+            </li>
+          ))}
+        </ul>
 
-      <p className="mt-10">
-        Have questions about your own family-law situation? Call{" "}
-        <a href="tel:+1-904-858-4334">904-858-4334</a> or{" "}
-        <Link href="/contact">contact me online</Link>.
-      </p>
-    </InnerPage>
+        <p className="mt-10">
+          Have questions about your own family-law situation? Call{" "}
+          <a href="tel:+1-904-858-4334">904-858-4334</a> or{" "}
+          <Link href="/contact">contact me online</Link>.
+        </p>
+      </InnerPage>
+    </>
   );
+}
+
+/**
+ * Detect FAQ sections in the blog body and build FAQPage schema.
+ * Looks for h3 elements preceded by "Frequently Asked Questions" h2.
+ * Returns schema object or null if no FAQ section found.
+ */
+function buildFaqSchema(body: string[]): Record<string, unknown> | null {
+  const faqIndex = body.findIndex(
+    (b) =>
+      b.toLowerCase().includes("frequently asked questions") ||
+      b.toLowerCase().includes("<h2>frequently asked questions"),
+  );
+  if (faqIndex === -1) return null;
+
+  const mainEntity: Record<string, unknown>[] = [];
+  let currentQuestion: string | null = null;
+
+  for (let i = faqIndex + 1; i < body.length; i++) {
+    const block = body[i];
+    const h3Match = block.match(/<h3>(.*?)<\/h3>/);
+    if (h3Match) {
+      if (currentQuestion && mainEntity.length > 0) {
+        // Previous question had no answer — still add it
+      }
+      currentQuestion = h3Match[1];
+      continue;
+    }
+
+    const h2Match = block.match(/<h2>(.*?)<\/h2>/);
+    if (h2Match && currentQuestion) break;
+
+    if (currentQuestion) {
+      const pMatch = block.match(/<p>(.*?)<\/p>/);
+      if (pMatch) {
+        const answerText = pMatch[1].replace(/<[^>]+>/g, "").trim();
+        mainEntity.push({
+          "@type": "Question",
+          name: currentQuestion,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: answerText,
+          },
+        });
+        currentQuestion = null;
+      }
+    }
+  }
+
+  if (mainEntity.length === 0) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity,
+  };
 }
