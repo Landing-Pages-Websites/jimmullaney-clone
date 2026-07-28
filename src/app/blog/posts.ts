@@ -1,7 +1,7 @@
 /**
  * Blog post metadata + content. Sourced from the live site at
  * https://www.jimmullaney.com/ — the owner of that site is also the owner
- * of this clone project. Each post is indexed by (year, month, slug) for
+ * of this clone project. Each post is indexed by (year, month, slug) for Updated 2026-07-28 Batch 4 internal links added.
  * the dynamic route.
  */
 
