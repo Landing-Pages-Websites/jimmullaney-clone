@@ -6,16 +6,16 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { posts, findPost } from "../../../posts";
 
-// Fully dynamic — no ISR prerender caching. Vercel ISR purge fix 4 2026-07-24
-export const dynamic = "force-dynamic";
-export const fetchCache = "default-no-store";
-export const revalidate = 0;
-// Disable all caching layers
-export const preferredRegion = "auto";
-// Use route segment config to ensure Vercel does not ISR-cache this route
-export const runtime = "nodejs";
+// Generate all known blog post pages at build time so Vercel never serves
+// a stale ISR prerender 404 fallback. dynamicParams:false means unknown
+// slugs correctly 404 instead of falling through to ISR caching.
+export const dynamicParams = false;
 
 type Params = { year: string; month: string; slug: string };
+
+export async function generateStaticParams(): Promise<Params[]> {
+  return posts.map((p) => ({ year: p.year, month: p.month, slug: p.slug }));
+}
 
 export async function generateMetadata({
   params,
