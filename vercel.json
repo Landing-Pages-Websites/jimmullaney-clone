@@ -4,7 +4,7 @@
   },
   "headers": [
     {
-      "source": "/blog/(.*)",
+      "source": "/blog/(.*)$",
       "headers": [
         {
           "key": "Cache-Control",
