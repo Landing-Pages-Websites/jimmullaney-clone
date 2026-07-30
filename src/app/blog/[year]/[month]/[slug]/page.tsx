@@ -6,12 +6,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { posts, findPost } from "../../../posts";
 
-// Generate all known blog post pages at build time so Vercel never serves
-// a stale ISR prerender 404 fallback. dynamicParams:false means unknown
-// slugs correctly 404 instead of falling through to ISR caching.
-// Removed generateStaticParams() — Vercel prerenders at build time and
-// edge-caches the HTML indefinitely even with force-dynamic. On-demand SSR
-// is the only reliable way for blog post pages to reflect live content changes.
+// force-dynamic ensures Vercel SSR renders blog posts on demand instead of
+// serving a stale ISR prerender 404 for newly added posts.
 export const dynamic = "force-dynamic";
 
 type Params = { year: string; month: string; slug: string };
