@@ -3,6 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { posts } from "./posts";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Blog | Jacksonville - Law Office of A. James Mullaney",
   description:
