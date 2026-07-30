@@ -1771,4 +1771,4 @@ export const posts: BlogPost[] = [
 export function findPost(year: string, month: string, slug: string): BlogPost | undefined {
   return posts.find((p) => p.year === year && p.month === month && p.slug === slug);
 }
-// Deployment trigger Thu Jul 30 10:13:30 UTC 2026
+// Deployment trigger Thu Jul 30 11:35 UTC 2026
