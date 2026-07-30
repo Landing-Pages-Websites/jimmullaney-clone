@@ -9,6 +9,9 @@ import { posts, findPost } from "../../../posts";
 // Generate all known blog post pages at build time so Vercel never serves
 // a stale ISR prerender 404 fallback. dynamicParams:false means unknown
 // slugs correctly 404 instead of falling through to ISR caching.
+// Force-dynamic ensures individual post pages re-render on each request
+// instead of serving stale prerendered HTML from the ISR cache.
+export const dynamic = "force-dynamic";
 export const dynamicParams = false;
 
 type Params = { year: string; month: string; slug: string };
