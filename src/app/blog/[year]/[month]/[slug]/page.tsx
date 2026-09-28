@@ -50,7 +50,7 @@ export default async function BlogPostPage({
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    datePublished: post.date,
+    datePublished: post.publishedDate ?? post.date,
     author: {
       "@type": "Person",
       name: "A. James Mullaney",
@@ -78,7 +78,12 @@ export default async function BlogPostPage({
         title={post.title}
         breadcrumbs={[{ label: "Blog", href: "/blog" }, { label: post.title }]}
       >
-        <p className="text-sm text-gray-500 italic mb-6 mt-0">{post.date}</p>
+        <time
+          className="text-sm text-gray-500 italic mb-6 mt-0 block"
+          dateTime={post.publishedDate ?? new Date(post.date).toISOString().slice(0, 10)}
+        >
+          {post.date}
+        </time>
 
         {post.body.map((paragraph, i) => {
           // Drop an InlineCTA after the 3rd paragraph so readers who scanned
