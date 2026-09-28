@@ -5,14 +5,19 @@
  * the dynamic route.
  */
 
+import { maritalSettlementAgreementBody } from "./msa-body";
+
 export type BlogPost = {
   year: string;
   month: string;
   slug: string;
   title: string;
-  date: string;
+  metaTitle?: string;
   publishedDate?: string;
+  date: string;
   excerpt: string;
+  image?: string;
+  imageAlt?: string;
   body: string[];
 };
 
@@ -87,6 +92,73 @@ export const posts: BlogPost[] = [
       "<p>Property division is generally treated differently from continuing support or parenting orders. A final property ruling is not ordinarily reopened simply because circumstances later change. An undisclosed asset or unresolved obligation requires prompt review of the judgment and records.</p>",
       "<h2>Schedule a Post-Divorce Modification Review</h2>",
       "<p>A careful review can help you understand whether a change may support a request to modify a Florida court order. Or whether enforcement or another option is more appropriate. To discuss your situation with the Law Office of A. James Mullaney, <a href=\"https://www.jimmullaney.com/contact/\">Schedule Your Consultation</a> through the firm's contact page.</p>"
+    ],
+  },
+  {
+    year: "2026",
+    month: "09",
+    slug: "alimony-attorney-st-johns-issues",
+    title: "Alimony Attorney in St. Johns: Key Issues",
+    metaTitle: "Alimony Attorney in St. Johns, FL: Key Issues Explained",
+    publishedDate: "2026-09-28",
+    date: "September 28, 2026",
+    excerpt: "Learn how an alimony attorney in St. Johns can explain Florida need, ability to pay, marital factors, negotiation, and mediation questions.",
+    body: [
+      "<p>Questions about alimony can affect your housing, retirement plans, work decisions, and ability to move forward after divorce. An <strong>alimony attorney in St. Johns</strong> can help clarify how Florida law applies to your circumstances, what financial information matters, and whether negotiation or mediation may be appropriate. This guide focuses on the questions worth bringing to a consultation. It is general information, not legal advice for a specific case.</p>",
+      "<p><strong><a href=\"https://www.jimmullaney.com/contact/\">Schedule Your Consultation</a></strong> to discuss your alimony questions with the Law Office of A. James Mullaney.</p>",
+      "<h2>What can an alimony attorney in St. Johns clarify?</h2>",
+      "<p>An alimony attorney can clarify whether a request for support fits Florida's need-and-ability framework, which type of alimony may be relevant, what evidence should be gathered, and how an agreement could be structured. The attorney can also explain the difference between legal advice, negotiation, mediation, and courtroom representation before you choose a path.</p>",
+      "<h3>Whether the issue is need, ability to pay, or both</h3>",
+      "<p>Florida alimony analysis generally begins with two foundational questions: does one spouse have an actual need for support, and does the other spouse have the ability to pay after meeting reasonable personal needs and obligations? The person requesting alimony has the burden of establishing need, and the court considers the other spouse's ability to contribute.</p>",
+      "<p>Those questions are more detailed than simply comparing two salaries. An attorney may help you organize information about income, bonuses, self-employment, benefits, recurring expenses, health insurance, debt, assets, and access to marital or nonmarital resources. A clear financial picture can make it easier to identify what is disputed and what can be resolved.</p>",
+      "<h3>What facts may matter under Florida law</h3>",
+      "<p>After assessing need and ability to pay, Florida courts consider statutory factors when deciding whether an alimony award is appropriate and what form it should take. The <a href=\"https://www.flsenate.gov/Laws/Statutes/2025/61.08\" rel=\"nofollow\" target=\"_blank\">Florida alimony statute</a> addresses issues including the standard of living during the marriage, the length of the marriage, each spouse's age and health, earning capacity, education, contributions to the marriage, and responsibilities involving minor children.</p>",
+      "<p>An attorney can help separate relevant evidence from information that may feel important but does not directly answer the legal question. For example, a spouse's role as a homemaker or caregiver may be relevant, but it must be considered alongside the family's financial history, each spouse's resources, and the other statutory factors.</p>",
+      "<h2>Which type of alimony might apply?</h2>",
+      "<p>Florida law recognizes several forms of alimony, and the right question is not simply, \"Can I get alimony?\" The more useful questions are which type may fit the goal, how long it could last, what terms may apply, and whether it can be modified. An attorney can explain the differences without promising a particular result.</p>",
+      "<table><thead><tr><th scope=\"col\">Type</th><th scope=\"col\">General purpose</th><th scope=\"col\">Questions to clarify</th></tr></thead><tbody><tr><td>Temporary alimony</td><td>Provides support while a divorce case is pending.</td><td>What support is needed during the case, and what financial proof is available?</td></tr><tr><td>Bridge-the-gap alimony</td><td>Helps a spouse transition from married life to being single.</td><td>What short-term transition expenses need to be addressed?</td></tr><tr><td>Rehabilitative alimony</td><td>Supports a defined plan for education, training, or re-entry into the workforce.</td><td>What is the specific rehabilitation plan, cost, and expected timeline?</td></tr><tr><td>Durational alimony</td><td>Provides support for a period after a marriage ends, subject to Florida's statutory framework.</td><td>How does the length of the marriage affect potential duration and terms?</td></tr></tbody></table>",
+      "<p>Florida law can also address the form of payment, including periodic payments or a lump-sum structure in appropriate circumstances. A proposal that appears simple may have different enforcement, security, tax, or modification implications. Those consequences should be reviewed before an agreement is signed.</p>",
+      "<h2>How does the length of the marriage affect alimony questions?</h2>",
+      "<p>For Florida alimony purposes, the marriage is generally classified as short-term, moderate-term, or long-term based on the time from the date of marriage to the date the divorce petition is filed. The classification is important, but it does not answer every alimony question by itself. Need, ability to pay, statutory factors, and the selected type still matter.</p>",
+      "<ul><li>A short-term marriage is generally less than 10 years.</li><li>A moderate-term marriage is generally at least 10 years but less than 20 years.</li><li>A long-term marriage is generally 20 years or more.</li></ul>",
+      "<p>An attorney can help confirm the dates that control the classification and explain how the classification interacts with the available form and duration of support. This is especially useful when a couple is close to one of the statutory thresholds or when other major issues, such as retirement assets or a long period of one spouse's unpaid caregiving, are also present.</p>",
+      "<h2>What financial records should you gather?</h2>",
+      "<p>Good alimony analysis depends on reliable financial information. Before a consultation, gather documents that show both current circumstances and the financial pattern of the marriage. You do not need to solve the case before meeting with an attorney, but organized records can make the first conversation more productive.</p>",
+      "<ul><li>Recent pay stubs, employment agreements, and records of bonuses or commissions</li><li>Recent federal income tax returns and supporting schedules</li><li>Bank, investment, retirement, and credit-account statements</li><li>Mortgage, rent, insurance, medical, childcare, and other recurring expense records</li><li>Business records, if either spouse owns or operates a business</li><li>Information about health insurance, employment benefits, and anticipated changes in income</li><li>Existing support orders, agreements, and prior divorce judgments</li></ul>",
+      "<p>Do not conceal, alter, or discard financial records. If you are concerned about access to accounts or documents, tell your attorney. The appropriate way to obtain and use financial information depends on the facts of the case and the applicable discovery rules.</p>",
+      "<figure><img alt=\"A family law mediator helping spouses discuss alimony questions\" src=\"https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/alimony-inline-696992.webp\"></figure>",
+      "<p><strong><a href=\"https://www.jimmullaney.com/contact/\">Get help organizing the alimony issues that matter in your situation.</a></strong></p>",
+      "<h2>Can an attorney help with an alimony agreement through mediation?</h2>",
+      "<p>Yes, when the circumstances are appropriate, an attorney can help you understand and negotiate alimony terms in mediation. Mediation is not the same as having a neutral mediator give either spouse legal advice. A party's attorney advises that party, while the mediator facilitates communication and helps the participants explore resolution.</p>",
+      "<p>The Law Office of A. James Mullaney takes a mediation-first approach to family law and can help clients understand how alimony fits with other settlement issues. A complete agreement may need to coordinate support with property division, retirement accounts, debt, child support, parenting arrangements, insurance, and tax considerations. Resolving one issue without considering the others can create problems later.</p>",
+      "<p>For couples who can communicate safely and exchange sufficient information, mediation may provide more privacy and flexibility than asking a judge to decide every disputed term. It is not appropriate for every case. Concerns about coercion, hidden assets, domestic violence, or an inability to negotiate safely should be raised with an attorney before choosing a process.</p>",
+      "<p>Read more about <a href=\"https://www.jimmullaney.com/divorce/divorce-mediation-in-jacksonville/\">divorce mediation in Jacksonville</a> to understand how mediation may address alimony and other family-law issues.</p>",
+      "<h2>What should you clarify before signing an alimony agreement?</h2>",
+      "<p>An alimony agreement should be evaluated as a legal and financial document, not just as a monthly number. Before signing, ask what the agreement says about the amount, payment dates, duration, termination events, modification, security, enforcement, and the relationship between alimony and the rest of the settlement.</p>",
+      "<ul><li>Is the support amount based on complete and reasonably current financial information?</li><li>Does the document clearly state when payments begin and end?</li><li>Does it explain what happens upon death, remarriage, or another legally significant event?</li><li>Does it address whether the obligation is modifiable or nonmodifiable?</li><li>Are life insurance or other forms of security proposed, and who pays related costs?</li><li>Does the agreement coordinate alimony with equitable distribution and retirement assets?</li><li>Are payment methods, records, and enforcement procedures clear?</li></ul>",
+      "<p>Whether a provision is enforceable or can be changed depends on the language used, the type of order or agreement, and the surrounding facts. Have the document reviewed before signing rather than relying on a general online explanation.</p>",
+      "<h2>Can alimony be changed after divorce?</h2>",
+      "<p>Sometimes. A substantial change in circumstances, retirement, remarriage, death, cohabitation, or another event may affect an alimony obligation, but the answer depends on the original judgment or agreement and the facts. A change in income does not automatically change support. An attorney can determine whether a legal basis exists and what procedure is required.</p>",
+      "<p>For post-divorce questions, bring the original final judgment, marital settlement agreement, payment history, and documents showing the alleged change. Do not unilaterally stop paying or reduce payments unless you have a lawful basis and appropriate order or agreement. If payments are not being made, the recipient may also need advice about enforcement.</p>",
+      "<p>The firm's <a href=\"https://www.jimmullaney.com/family-law-modifications/\">Florida family law modifications resource</a> provides related information. The correct next step may be a negotiated resolution, a modification request, an enforcement proceeding, or a different legal response.</p>",
+      "<h2>When should you speak with an alimony attorney in St. Johns?</h2>",
+      "<p>Early advice can be useful when alimony is likely to affect whether you can support yourself, keep a home, retire, change jobs, or complete education or training. It is also wise to seek counsel before signing a settlement, making a major financial change, responding to a support demand, or agreeing to a number without understanding its duration and enforcement terms.</p>",
+      "<p>You may want to prepare these questions for a consultation:</p>",
+      "<ul><li>What facts in my situation support or weaken an alimony request?</li><li>Which financial records should I collect first?</li><li>What type of alimony, if any, best matches the issue I need to solve?</li><li>Could mediation help, and what would I need to understand before participating?</li><li>What terms should be addressed in a proposed agreement?</li><li>If an order already exists, is there a possible modification or enforcement issue?</li></ul>",
+      "<p>Choose a process based on your circumstances, not on the assumption that every divorce should be handled the same way. Some couples can reach a carefully reviewed agreement. Other cases require litigation to address disputed facts, safety concerns, or financial complexity.</p>",
+      "<p><strong><a href=\"https://www.jimmullaney.com/contact/\">Schedule Your Consultation</a></strong> with the Law Office of A. James Mullaney to discuss your Florida alimony questions and possible next steps.</p>",
+      "<h2>Frequently asked questions</h2>",
+      "<h3>What is the first question in a Florida alimony case?</h3>",
+      "<p>Florida alimony analysis generally begins by asking whether the requesting spouse has an actual need for support and whether the other spouse has the ability to pay. If both are established, the court considers the statutory factors and the appropriate type and terms of alimony.</p>",
+      "<h3>Does a St. Johns alimony attorney guarantee support?</h3>",
+      "<p>No. An attorney can explain the law, evaluate evidence, negotiate, mediate, or represent you in court, but no attorney can guarantee an alimony award, amount, duration, or outcome. The result depends on the facts, financial evidence, applicable law, and the process used.</p>",
+      "<h3>Is mediation required for an alimony dispute?</h3>",
+      "<p>Mediation may be used in many family-law disputes, but whether it is required or appropriate depends on the case, court orders, local procedure, and the circumstances of the parties. Ask an attorney about the requirements that apply to your case before scheduling or declining mediation.</p>",
+      "<h3>Can alimony and child support be addressed together?</h3>",
+      "<p>They can affect the same household budget, but alimony and child support are different legal obligations with different rules. A complete settlement should consider how support, parenting arrangements, expenses, insurance, and property division fit together.</p>",
+      "<h3>What should I bring to an alimony consultation?</h3>",
+      "<p>Bring recent income information, tax returns, bank and retirement statements, recurring expenses, major debt information, existing court orders or agreements, and a short timeline of the marriage and current dispute. If you cannot gather everything, schedule the consultation and explain what is missing.</p>",
+      "<p>For general information about the firm's family-law services and the limits of online legal information, visit the <a href=\"https://www.jimmullaney.com/attorney/mullaney-a-james/\">attorney profile for A. James Mullaney</a> or contact the office directly.</p>",
     ],
   },
   {
@@ -2153,6 +2225,17 @@ export const posts: BlogPost[] = [
       "<h2>Ready to Schedule Your Consultation?</h2>",
       "<p>Understanding how service works can help you take the next step with greater clarity. To discuss your situation and the available options, <a href=\"https://www.jimmullaney.com/contact/\">Schedule Your Consultation</a>.</p>",
     ],
+  },
+  {
+    year: "2026",
+    month: "09",
+    slug: "what-is-a-marital-settlement-agreement-in-florida",
+    title: "What Is a Marital Settlement Agreement in Florida?",
+    date: "September 28, 2026",
+    excerpt: "Learn what is a marital settlement agreement in Florida, what it covers, how court review fits in, and when legal advice may help before signing.",
+    image: "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/what-is-a-marital-settlement-agreement-in-florida-841599.webp",
+    imageAlt: "Florida spouses discussing a marital settlement agreement with a family-law attorney",
+    body: maritalSettlementAgreementBody,
   },
 ];
 

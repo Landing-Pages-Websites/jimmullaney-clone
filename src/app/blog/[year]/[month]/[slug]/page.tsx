@@ -22,7 +22,7 @@ export async function generateMetadata({
   const post = findPost(year, month, slug);
   if (!post) return { title: "Post Not Found" };
   return {
-    title: post.title,
+    title: post.metaTitle ?? post.title,
     description: post.excerpt,
     alternates: { canonical: `/blog/${post.year}/${post.month}/${post.slug}` },
     openGraph: {
@@ -84,6 +84,14 @@ export default async function BlogPostPage({
         >
           {post.date}
         </time>
+
+        {post.image && (
+          <img
+            src={post.image}
+            alt={post.imageAlt ?? post.title}
+            className="w-full max-w-3xl h-auto rounded-lg mb-8"
+          />
+        )}
 
         {post.body.map((paragraph, i) => {
           // Drop an InlineCTA after the 3rd paragraph so readers who scanned
