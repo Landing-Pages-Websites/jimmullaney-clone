@@ -80,7 +80,7 @@ export default async function BlogPostPage({
       >
         <time
           className="text-sm text-gray-500 italic mb-6 mt-0 block"
-          dateTime={new Date(post.date).toISOString().slice(0, 10)}
+          dateTime={post.publishedDate ?? new Date(post.date).toISOString().slice(0, 10)}
         >
           {post.date}
         </time>

@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/florida-child-support-calculator", priority: 0.9, changeFrequency: "yearly" },
     { path: "/videos", priority: 0.6, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
+    { path: "/blog/2026/09/post-divorce-modification-attorney-jacksonville-guide", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/09/alimony-attorney-st-johns-issues", priority: 0.7, changeFrequency: "monthly" },
 
     // Legal
