@@ -6,6 +6,7 @@
  */
 
 import { maritalSettlementAgreementBody } from "./msa-body";
+import { jacksonvilleAlimonyLawyerPost } from "./jacksonville-alimony-lawyer-main-issues";
 import { orangeParkModificationBody } from "./orange-park-body";
 import { floridaSimplifiedDissolutionBody } from "./florida-simplified-dissolution-body";
 
@@ -24,6 +25,7 @@ export type BlogPost = {
 };
 
 export const posts: BlogPost[] = [
+  jacksonvilleAlimonyLawyerPost,
   {
     year: "2026",
     month: "09",
