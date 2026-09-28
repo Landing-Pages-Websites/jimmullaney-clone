@@ -30,7 +30,11 @@ export default function BlogPage() {
               <h2 style={{ borderBottom: "none", marginTop: 0 }}>
                 <Link href={href}>{post.title}</Link>
               </h2>
-              <p className="text-sm text-gray-500 italic">{post.date}</p>
+              <p className="text-sm text-gray-500 italic">
+                <time dateTime={new Date(post.date).toISOString().slice(0, 10)}>
+                  {post.date}
+                </time>
+              </p>
               <p className="mt-2">{post.excerpt}</p>
               <Link
                 href={href}

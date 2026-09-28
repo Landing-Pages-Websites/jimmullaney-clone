@@ -78,7 +78,11 @@ export default async function BlogPostPage({
         title={post.title}
         breadcrumbs={[{ label: "Blog", href: "/blog" }, { label: post.title }]}
       >
-        <p className="text-sm text-gray-500 italic mb-6 mt-0">{post.date}</p>
+        <p className="text-sm text-gray-500 italic mb-6 mt-0">
+          <time dateTime={new Date(post.date).toISOString().slice(0, 10)}>
+            {post.date}
+          </time>
+        </p>
 
         {post.body.map((paragraph, i) => {
           // Drop an InlineCTA after the 3rd paragraph so readers who scanned
