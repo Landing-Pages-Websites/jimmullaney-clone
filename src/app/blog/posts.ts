@@ -6,6 +6,7 @@
  */
 
 import { maritalSettlementAgreementBody } from "./msa-body";
+import { jacksonvilleAlimonyLawyerPost } from "./jacksonville-alimony-lawyer-main-issues";
 
 export type BlogPost = {
   year: string;
@@ -22,6 +23,7 @@ export type BlogPost = {
 };
 
 export const posts: BlogPost[] = [
+  jacksonvilleAlimonyLawyerPost,
   {
     year: "2026",
     month: "09",
