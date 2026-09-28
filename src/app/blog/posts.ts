@@ -6,6 +6,7 @@
  */
 
 import { maritalSettlementAgreementBody } from "./msa-body";
+import { floridaSimplifiedDissolutionBody } from "./florida-simplified-dissolution-body";
 
 export type BlogPost = {
   year: string;
@@ -25,6 +26,17 @@ export const posts: BlogPost[] = [
   {
     year: "2026",
     month: "09",
+    slug: "florida-simplified-dissolution-who-qualifies",
+    title: "Florida Simplified Dissolution of Marriage Requirements",
+    metaTitle: "Florida Simplified Dissolution of Marriage Requirements",
+    publishedDate: "2026-09-28",
+    date: "September 28, 2026",
+    excerpt: "Understand Florida simplified dissolution of marriage requirements, eligibility rules, filing steps, and alternatives before choosing a simplified divorce path.",
+    image: "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-simplified-dissolution-of-marriage-requirements-745571.webp",
+    imageAlt: "Jacksonville couple discussing a simplified dissolution agreement with a family law attorney",
+    body: floridaSimplifiedDissolutionBody,
+  },
+  {
     slug: "post-divorce-modification-attorney-jacksonville-guide",
     title: "Post-Divorce Modification Attorney Jacksonville Guide",
     date: "September 28, 2026",
