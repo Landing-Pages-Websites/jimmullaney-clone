@@ -32,7 +32,7 @@ export default function BlogPage() {
               </h2>
               <time
                 className="text-sm text-gray-500 italic"
-                dateTime={post.dateISO ?? new Date(post.date).toISOString().slice(0, 10)}
+                dateTime={post.dateISO ?? post.publishedDate ?? new Date(post.date).toISOString().slice(0, 10)}
               >
                 {post.date}
               </time>

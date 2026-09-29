@@ -22,7 +22,7 @@ export async function generateMetadata({
   const post = findPost(year, month, slug);
   if (!post) return { title: "Post Not Found" };
   return {
-    title: post.title,
+    title: post.metaTitle ?? post.title,
     description: post.excerpt,
     alternates: { canonical: `/blog/${post.year}/${post.month}/${post.slug}` },
     openGraph: {
@@ -50,7 +50,7 @@ export default async function BlogPostPage({
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    datePublished: post.dateISO ?? post.date,
+    datePublished: post.dateISO ?? post.publishedDate ?? post.date,
     author: {
       "@type": "Person",
       name: "A. James Mullaney",
@@ -80,10 +80,18 @@ export default async function BlogPostPage({
       >
         <time
           className="text-sm text-gray-500 italic mb-6 mt-0 block"
-          dateTime={post.dateISO ?? new Date(post.date).toISOString().slice(0, 10)}
+          dateTime={post.dateISO ?? post.publishedDate ?? new Date(post.date).toISOString().slice(0, 10)}
         >
           {post.date}
         </time>
+
+        {post.image && (
+          <img
+            src={post.image}
+            alt={post.imageAlt ?? post.title}
+            className="w-full max-w-3xl h-auto rounded-lg mb-8"
+          />
+        )}
 
         {post.body.map((paragraph, i) => {
           // Drop an InlineCTA after the 3rd paragraph so readers who scanned
