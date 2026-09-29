@@ -18,11 +18,14 @@ export type BlogPost = {
   metaTitle?: string;
   publishedDate?: string;
   date: string;
+  dateISO?: string;
   excerpt: string;
   image?: string;
   imageAlt?: string;
   body: string[];
 };
+
+import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
   jacksonvilleAlimonyLawyerPost,
@@ -267,6 +270,16 @@ export const posts: BlogPost[] = [
       "<p>Bring recent income information, tax returns, bank and retirement statements, recurring expenses, major debt information, existing court orders or agreements, and a short timeline of the marriage and current dispute. If you cannot gather everything, schedule the consultation and explain what is missing.</p>",
       "<p>For general information about the firm's family-law services and the limits of online legal information, visit the <a href=\"https://www.jimmullaney.com/attorney/mullaney-a-james/\">attorney profile for A. James Mullaney</a> or contact the office directly.</p>",
     ],
+  },
+  {
+    year: "2026",
+    month: "09",
+    slug: "flat-fee-uncontested-divorce-jacksonville-what-fee-covers",
+    title: "Flat Fee Uncontested Divorce Jacksonville: Fee Guide",
+    date: "September 28, 2026",
+    dateISO: "2026-09-28",
+    excerpt: "See what a flat fee uncontested divorce Jacksonville service may include, what costs are separate, and how to prepare for an attorney consultation.",
+    body: flatFeeUncontestedDivorceBody,
   },
   {
     year: "2026",
