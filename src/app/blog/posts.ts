@@ -11,11 +11,24 @@ export type BlogPost = {
   slug: string;
   title: string;
   date: string;
+  dateISO?: string;
   excerpt: string;
   body: string[];
 };
 
+import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
+
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "09",
+    slug: "flat-fee-uncontested-divorce-jacksonville-what-fee-covers",
+    title: "Flat Fee Uncontested Divorce Jacksonville: Fee Guide",
+    date: "September 28, 2026",
+    dateISO: "2026-09-28",
+    excerpt: "See what a flat fee uncontested divorce Jacksonville service may include, what costs are separate, and how to prepare for an attorney consultation.",
+    body: flatFeeUncontestedDivorceBody,
+  },
   {
     year: "2026",
     month: "07",
