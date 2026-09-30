@@ -9,6 +9,7 @@ import { maritalSettlementAgreementBody } from "./msa-body";
 import { jacksonvilleAlimonyLawyerPost } from "./jacksonville-alimony-lawyer-main-issues";
 import { orangeParkModificationBody } from "./orange-park-body";
 import { floridaSimplifiedDissolutionBody } from "./florida-simplified-dissolution-body";
+import { alimonyLawyerOrangeParkQuestionsBody } from "./alimony-lawyer-orange-park-questions-body";
 
 export type BlogPost = {
   year: string;
@@ -29,6 +30,19 @@ import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
   jacksonvilleAlimonyLawyerPost,
+  {
+    year: "2026",
+    month: "09",
+    slug: "alimony-lawyer-orange-park-questions",
+    title: "Alimony Lawyer Orange Park: Florida Questions Answered",
+    metaTitle: "Alimony Lawyer Orange Park: Florida Questions Answered",
+    publishedDate: "2026-09-28",
+    date: "September 28, 2026",
+    excerpt: "Learn what an alimony lawyer Orange Park residents consult can explain about Florida support factors, alimony types, mediation, and case preparation.",
+    image: "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/alimony-lawyer-orange-park-florida-questions-answered-754666.webp",
+    imageAlt: "Couple discussing Florida alimony questions with a family law attorney",
+    body: alimonyLawyerOrangeParkQuestionsBody,
+  },
   {
     year: "2026",
     month: "09",
