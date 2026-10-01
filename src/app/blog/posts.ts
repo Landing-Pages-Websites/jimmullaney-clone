@@ -10,6 +10,7 @@ import { jacksonvilleAlimonyLawyerPost } from "./jacksonville-alimony-lawyer-mai
 import { orangeParkModificationBody } from "./orange-park-body";
 import { floridaSimplifiedDissolutionBody } from "./florida-simplified-dissolution-body";
 import { alimonyLawyerOrangeParkQuestionsBody } from "./alimony-lawyer-orange-park-questions-body";
+import { childSupportLawyerOrangeParkBody } from "./child-support-lawyer-orange-park-body";
 
 export type BlogPost = {
   year: string;
@@ -2372,6 +2373,22 @@ export const posts: BlogPost[] = [
     image: "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/what-is-a-marital-settlement-agreement-in-florida-841599.webp",
     imageAlt: "Florida spouses discussing a marital settlement agreement with a family-law attorney",
     body: maritalSettlementAgreementBody,
+  },
+  {
+    year: "2026",
+    month: "10",
+    slug: "child-support-lawyer-orange-park",
+    title: "Child Support Lawyer Orange Park: Parent Guide",
+    metaTitle: "Child Support Lawyer Orange Park: Florida Parent Guide",
+    publishedDate: "2026-10-01",
+    date: "October 1, 2026",
+    dateISO: "2026-10-01",
+    excerpt:
+      "Learn when to call a child support lawyer Orange Park parents can trust, how Florida guidelines work, and how paternity and time-sharing connect.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/child-support-lawyer-orange-park-parent-guide-104332.webp",
+    imageAlt: "Attorney meeting with an Orange Park parent about child support",
+    body: childSupportLawyerOrangeParkBody,
   },
 ];
 
