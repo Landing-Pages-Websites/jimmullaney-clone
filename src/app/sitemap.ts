@@ -61,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/blog/2026/09/amicable-divorce-attorney-in-jacksonville-beach", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/09/flat-fee-uncontested-divorce-jacksonville-what-fee-covers", priority: 0.7, changeFrequency: "monthly" },
     { path: "/blog/2026/10/child-support-lawyer-orange-park", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/blog/2026/10/family-law-mediation-st-augustine-process", priority: 0.8, changeFrequency: "monthly" },
 
     // Legal
     { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
