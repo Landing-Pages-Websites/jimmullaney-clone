@@ -11,7 +11,8 @@ import { orangeParkModificationBody } from "./orange-park-body";
 import { floridaSimplifiedDissolutionBody } from "./florida-simplified-dissolution-body";
 import { alimonyLawyerOrangeParkQuestionsBody } from "./alimony-lawyer-orange-park-questions-body";
 import { childSupportLawyerOrangeParkBody } from "./child-support-lawyer-orange-park-body";
-import { familyLawMediationStAugustineBody } from "./family-law-mediation-st-augustine-process-body";
+import { freeConsultationFamilyLawQuestionsBodyHtml } from "./free-consultation-family-law-questions-body";
+import { familyLawMediationStAugustineBody } from "./family-law-mediation-st-augustine-process-body"
 
 export type BlogPost = {
   year: string;
@@ -31,6 +32,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "free-consultation-family-law-questions",
+    title: "Free Consultation Family Law Questions: What to Bring",
+    metaTitle: "Free Family Law Consultation: What to Prepare",
+    publishedDate: "2026-10-06",
+    date: "October 6, 2026",
+    dateISO: "2026-10-06",
+    excerpt:
+      "Prepare for a family law consultation with questions about fees, process, documents, and your priorities before you meet with an attorney.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/preparing-for-a-family-law-consultation-questions-to-bring-103188.webp",
+    imageAlt:
+      "A person organizing family law paperwork and questions before a consultation",
+    body: freeConsultationFamilyLawQuestionsBodyHtml.split(
+      /(?=<(?:p|h2|h3|ul)>)/,
+    ),
+  },
   jacksonvilleAlimonyLawyerPost,
   {
     year: "2026",
