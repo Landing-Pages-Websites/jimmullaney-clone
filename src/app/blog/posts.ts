@@ -14,6 +14,7 @@ import { childSupportLawyerOrangeParkBody } from "./child-support-lawyer-orange-
 import { freeConsultationFamilyLawQuestionsBodyHtml } from "./free-consultation-family-law-questions-body";
 import { familyLawMediationStAugustineBody } from "./family-law-mediation-st-augustine-process-body"
 import { familyLawGuidanceOrangeParkBodyHtml } from "./family-law-guidance-orange-park-body";
+import { floridaDivorceCourtBodyHtml } from "./divorce-court-body";
 
 export type BlogPost = {
   year: string;
@@ -33,6 +34,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "divorce-court",
+    title: "Florida Divorce Court: What Happens at Key Hearings",
+    metaTitle: "Florida Divorce Court: What to Expect at Hearings",
+    publishedDate: "2026-10-08",
+    date: "October 8, 2026",
+    dateISO: "2026-10-08",
+    excerpt:
+      "Learn what to expect in Florida divorce court, from filing and temporary hearings to mediation and a final hearing, plus practical ways to prepare.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-divorce-court-what-happens-at-key-hearings-269898.webp",
+    imageAlt:
+      "A Florida family law attorney reviewing divorce court documents at a desk",
+    body: floridaDivorceCourtBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
