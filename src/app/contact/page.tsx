@@ -1,5 +1,6 @@
 import InnerPage from "../components/InnerPage";
-import { JsonLd, contactFaqSchema } from "../components/StructuredData";
+import JsonLd from "../components/JsonLd";
+import { contactFaqSchema } from "../components/StructuredData";
 import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";

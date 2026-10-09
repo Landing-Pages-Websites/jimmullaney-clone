@@ -1,17 +1,3 @@
-/**
- * Reusable JSON-LD emitter. Pass any schema.org object; it renders a
- * <script type="application/ld+json"> tag that Google and other search
- * engines parse for rich results.
- */
-export function JsonLd({ data }: { data: Record<string, unknown> | Record<string, unknown>[] }) {
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
-  );
-}
-
 const BASE_URL = "https://jimmullaney-clone.vercel.app";
 const PHONE = "+1-904-858-4334";
 const ADDRESS = {

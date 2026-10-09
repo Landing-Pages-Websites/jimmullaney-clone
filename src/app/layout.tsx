@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Playfair_Display, Inter } from "next/font/google";
-import { JsonLd, legalServiceSchema } from "./components/StructuredData";
+import JsonLd from "./components/JsonLd";
+import { legalServiceSchema } from "./components/StructuredData";
 import StickyCTA from "./components/StickyCTA";
 import "./globals.css";
 
