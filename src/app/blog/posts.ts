@@ -2472,3 +2472,19 @@ export function findPost(year: string, month: string, slug: string): BlogPost | 
   return posts.find((p) => p.year === year && p.month === month && p.slug === slug);
 }
 // // Deployment trigger force prod alias: 1785496590
+import { legalSeparationInFloridaBodyHtml } from "./legal-separation-in-florida-body";
+
+posts.push({
+  year: "2026",
+  month: "10",
+  slug: "legal-separation-in-florida",
+  title: "Legal Separation in Florida: What the Law Allows",
+  metaTitle: "Legal Separation in Florida: What You Can Do",
+  publishedDate: "2026-10-09",
+  date: "October 9, 2026",
+  dateISO: "2026-10-09",
+  excerpt: "Learn what legal separation means in Florida, how spouses may address support and parenting, and what an informal agreement cannot do while married.",
+  image: "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/legal-separation-in-florida-what-the-law-allows-274076.webp",
+  imageAlt: "A couple reviewing paperwork with a family law professional in a calm office setting",
+  body: [legalSeparationInFloridaBodyHtml],
+});
