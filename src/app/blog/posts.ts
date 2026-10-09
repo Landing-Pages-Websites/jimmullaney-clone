@@ -1,4 +1,6 @@
-import { alimonyAttorneyStJohnsIssuesBodyHtml } from "./alimony-attorney-st-johns-issues-body";/**
+import { alimonyAttorneyStJohnsIssuesBodyHtml } from "./alimony-attorney-st-johns-issues-body";
+import { legalSeparationInFloridaBodyHtml } from "./legal-separation-in-florida-body";
+/**
  * Blog post metadata + content. Sourced from the live site at
  * https://www.jimmullaney.com/ — the owner of that site is also the owner
  * of this clone project. Each post is indexed by (year, month, slug) for Updated 2026-07-28 Batch 4 internal links added.
@@ -33,7 +35,26 @@ export type BlogPost = {
 
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
-export const posts: BlogPost[] = [  { year: "2026", month: "10", slug: "alimony-attorney-st-johns-issues", title: "Alimony Attorney in St. Johns: Key Issues", metaTitle: "Alimony Attorney in St. Johns, FL: Key Issues Explained", publishedDate: "2026-10-08", date: "October 8, 2026", dateISO: "2026-10-08", excerpt: "Learn how an alimony attorney in St. Johns can explain Florida need, ability to pay, marital factors, negotiation, and mediation questions.", image: "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/alimony-attorney-in-st-johns-key-issues-153973.webp", imageAlt: "Attorney and client discussing Florida alimony options in a Jacksonville office", body: alimonyAttorneyStJohnsIssuesBodyHtml.split(/(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/) },
+export const posts: BlogPost[] = [  {
+    year: "2026",
+    month: "10",
+    slug: "legal-separation-in-florida",
+    title: "Legal Separation in Florida: What the Law Allows",
+    metaTitle: "Legal Separation in Florida: What You Can Do",
+    publishedDate: "2026-10-09",
+    date: "October 9, 2026",
+    dateISO: "2026-10-09",
+    excerpt:
+      "Learn what legal separation means in Florida, how spouses may address support and parenting, and what an informal agreement cannot do while married.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/legal-separation-in-florida-what-the-law-allows-274076.webp",
+    imageAlt:
+      "A couple reviewing paperwork with a family law professional in a calm office setting",
+    body: legalSeparationInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
+  { year: "2026", month: "10", slug: "alimony-attorney-st-johns-issues", title: "Alimony Attorney in St. Johns: Key Issues", metaTitle: "Alimony Attorney in St. Johns, FL: Key Issues Explained", publishedDate: "2026-10-08", date: "October 8, 2026", dateISO: "2026-10-08", excerpt: "Learn how an alimony attorney in St. Johns can explain Florida need, ability to pay, marital factors, negotiation, and mediation questions.", image: "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/alimony-attorney-in-st-johns-key-issues-153973.webp", imageAlt: "Attorney and client discussing Florida alimony options in a Jacksonville office", body: alimonyAttorneyStJohnsIssuesBodyHtml.split(/(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/) },
   {
     year: "2026",
     month: "10",
