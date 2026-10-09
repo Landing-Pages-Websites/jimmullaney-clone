@@ -1,3 +1,4 @@
+import { collaborativeDivorceInFloridaBodyHtml } from "./collaborative-divorce-in-florida-body";
 import { alimonyAttorneyStJohnsIssuesBodyHtml } from "./alimony-attorney-st-johns-issues-body";
 import { legalSeparationInFloridaBodyHtml } from "./legal-separation-in-florida-body";
 /**
@@ -35,7 +36,23 @@ export type BlogPost = {
 
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
-export const posts: BlogPost[] = [  {
+export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "what-is-a-collaborative-divorce",
+    title: "What Is a Collaborative Divorce in Florida?",
+    metaTitle: "What Is a Collaborative Divorce? Florida Process Guide",
+    publishedDate: "2026-10-09",
+    date: "October 9, 2026",
+    dateISO: "2026-10-09",
+    excerpt: "What is a collaborative divorce? Learn how Florida's voluntary process uses separate attorneys, financial disclosure, meetings, and settlement documents.",
+    image: "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/what-is-a-collaborative-divorce-in-florida-428908.webp",
+    imageAlt: "Jacksonville family law attorney meeting with a couple about collaborative divorce",
+    body: collaborativeDivorceInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },  {
     year: "2026",
     month: "10",
     slug: "legal-separation-in-florida",
