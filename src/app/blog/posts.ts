@@ -53,7 +53,7 @@ export const posts: BlogPost[] = [
     imageAlt:
       "Client speaking with a Florida family law attorney about a protective order",
     body: floridaRestrainingOrdersBodyHtml.split(
-      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>)))/,
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
   },{
     year: "2026",
     month: "10",
