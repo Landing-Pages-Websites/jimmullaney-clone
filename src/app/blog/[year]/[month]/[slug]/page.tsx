@@ -1,7 +1,7 @@
 import InnerPage from "../../../../components/InnerPage";
 import InlineCTA from "../../../../components/InlineCTA";
 import Link from "next/link";
-import { JsonLd } from "../../../../components/StructuredData";
+import JsonLd from "../../../../components/JsonLd";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { posts, findPost } from "../../../posts";

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { JsonLd } from "./StructuredData";
+import JsonLd from "./JsonLd";
 
 /**
  * Seven Florida family-law FAQs optimized for Answer Engine Optimization

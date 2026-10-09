@@ -3,7 +3,7 @@ import InlineCTA from "../components/InlineCTA";
 import CalconicEmbed from "../components/CalconicEmbed";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { JsonLd } from "../components/StructuredData";
+import JsonLd from "../components/JsonLd";
 
 export const metadata: Metadata = {
   title: "A Free 2026 Florida Child Support Calculator | Jacksonville Family Law",

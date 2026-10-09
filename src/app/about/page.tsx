@@ -5,7 +5,8 @@ import PracticeAreasSidebar from "../components/PracticeAreasSidebar";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { JsonLd, breadcrumbSchema } from "../components/StructuredData";
+import JsonLd from "../components/JsonLd";
+import { breadcrumbSchema } from "../components/StructuredData";
 
 export const metadata: Metadata = {
   title: "About a Jacksonville Family Law Attorney & Florida Certified Mediator",

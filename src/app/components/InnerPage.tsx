@@ -2,7 +2,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import PageHero from "./PageHero";
 import PracticeAreasSidebar from "./PracticeAreasSidebar";
-import { JsonLd, breadcrumbSchema } from "./StructuredData";
+import JsonLd from "./JsonLd";
+import { breadcrumbSchema } from "./StructuredData";
 
 interface InnerPageProps {
   title: string;

@@ -5,7 +5,8 @@ import PracticeAreasSidebar from "../../components/PracticeAreasSidebar";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { JsonLd, attorneySchema, breadcrumbSchema } from "../../components/StructuredData";
+import JsonLd from "../../components/JsonLd";
+import { attorneySchema, breadcrumbSchema } from "../../components/StructuredData";
 
 export const metadata: Metadata = {
   title: "A. James Mullaney — Jacksonville Family Law Attorney & Mediator",
