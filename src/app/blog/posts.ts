@@ -18,6 +18,7 @@ import { freeConsultationFamilyLawQuestionsBodyHtml } from "./free-consultation-
 import { familyLawMediationStAugustineBody } from "./family-law-mediation-st-augustine-process-body"
 import { familyLawGuidanceOrangeParkBodyHtml } from "./family-law-guidance-orange-park-body";
 import { floridaDivorceCourtBodyHtml } from "./divorce-court-body";
+import { parentalAlienationFloridaBodyHtml } from "./parental-alienation-florida-body";
 
 export type BlogPost = {
   year: string;
@@ -37,6 +38,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [  
+  {
+    year: "2026",
+    month: "10",
+    slug: "parental-alienation-florida",
+    title: "Parental Alienation Florida: What Parents Should Know",
+    metaTitle: "Parental Alienation Florida: Court Factors and Remedies",
+    publishedDate: "2026-10-13",
+    date: "October 13, 2026",
+    dateISO: "2026-10-13",
+    excerpt:
+      "Learn how Florida courts address parental alienation florida allegations through best-interest factors, parenting plans, evidence, and possible legal remedies.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/parental-alienation-florida-what-parents-should-know-793668.webp",
+    imageAlt:
+      "Florida parents discussing a custody issue with a family law attorney",
+    body: parentalAlienationFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
