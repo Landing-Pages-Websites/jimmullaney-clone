@@ -29,7 +29,7 @@ export async function generateMetadata({
       title: post.title,
       description: post.excerpt,
       type: "article",
-      publishedTime: post.date,
+      publishedTime: post.dateISO ?? post.publishedDate ?? post.date,
     },
   };
 }
