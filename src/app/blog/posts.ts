@@ -19,6 +19,7 @@ import { familyLawMediationStAugustineBody } from "./family-law-mediation-st-aug
 import { familyLawGuidanceOrangeParkBodyHtml } from "./family-law-guidance-orange-park-body";
 import { floridaDivorceCourtBodyHtml } from "./divorce-court-body";
 import { parentalAlienationFloridaBodyHtml } from "./parental-alienation-florida-body";
+import { floridaStatute61075EquitableDistributionBodyHtml } from "./florida-statute-61-075-equitable-distribution-marital-assets-title-body";
 
 export type BlogPost = {
   year: string;
@@ -37,7 +38,26 @@ export type BlogPost = {
 
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
-export const posts: BlogPost[] = [  
+export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "florida-statute-61-075-equitable-distribution-marital-assets-title",
+    title: "Florida Statute 61.075 and Equitable Distribution of Marital Assets",
+    metaTitle: "Florida Statute 61.075: Asset Division",
+    publishedDate: "2026-10-15",
+    date: "October 15, 2026",
+    dateISO: "2026-10-15",
+    excerpt:
+      "Learn how Florida Statute 61.075 addresses marital and nonmarital property, valuation, debts, and why an asset's title alone may not decide division.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-statute-61075-and-equitable-distribution-of-marital-assets-854505.webp",
+    imageAlt:
+      "Documents and financial records arranged on a desk during divorce planning",
+    body: floridaStatute61075EquitableDistributionBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
