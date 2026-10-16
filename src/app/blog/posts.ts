@@ -20,6 +20,8 @@ import { familyLawGuidanceOrangeParkBodyHtml } from "./family-law-guidance-orang
 import { floridaDivorceCourtBodyHtml } from "./divorce-court-body";
 import { parentalAlienationFloridaBodyHtml } from "./parental-alienation-florida-body";
 import { floridaStatute61075BodyHtml } from "./florida-statute-61-075-body";
+import { floridaDivorceMaritalPropertyWithoutPermissionBodyHtml } from "./florida-divorce-marital-property-without-permission-body";
+import { howToChangeJurisdictionForChildCustodyInFloridaBodyHtml } from "./how-to-change-jurisdiction-for-child-custody-in-florida-body";
 
 export type BlogPost = {
   year: string;
@@ -38,7 +40,26 @@ export type BlogPost = {
 
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
-export const posts: BlogPost[] = [  
+export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "how-to-change-jurisdiction-for-child-custody-in-florida",
+    title: "How to Change Jurisdiction for Child Custody in Florida",
+    metaTitle: "Change Child Custody Jurisdiction in Florida",
+    publishedDate: "2026-10-16",
+    date: "October 16, 2026",
+    dateISO: "2026-10-16",
+    excerpt:
+      "Learn when Florida can decide or modify a child custody case, how the UCCJEA applies, and what to do when a parent or child moves away.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-to-change-jurisdiction-for-child-custody-in-florida-885382.webp",
+    imageAlt:
+      "Parent reviewing child custody paperwork with an attorney at a desk",
+    body: howToChangeJurisdictionForChildCustodyInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
