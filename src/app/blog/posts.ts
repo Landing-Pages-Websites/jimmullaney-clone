@@ -44,6 +44,26 @@ export const posts: BlogPost[] = [
   {
     year: "2026",
     month: "10",
+    slug: "florida-divorce-marital-property-without-permission",
+    title: "Can One Spouse Take Marital Property Without Permission in a Florida Divorce?",
+    metaTitle: "Can a Spouse Take Marital Property in Florida?",
+    publishedDate: "2026-10-16",
+    date: "October 16, 2026",
+    dateISO: "2026-10-16",
+    excerpt:
+      "Learn what to do if a spouse may move, sell, or hide property during a Florida divorce, including records to preserve and when to seek court help.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/can-one-spouse-take-marital-property-without-permission-in-a-florida-divorce-161349.webp",
+    imageAlt:
+      "Documents and a home key on a table as a couple organizes property records during divorce",
+    body: floridaDivorceMaritalPropertyWithoutPermissionBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
+
+  {
+    year: "2026",
+    month: "10",
     slug: "how-to-change-jurisdiction-for-child-custody-in-florida",
     title: "How to Change Jurisdiction for Child Custody in Florida",
     metaTitle: "Change Child Custody Jurisdiction in Florida",
