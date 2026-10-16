@@ -99,7 +99,7 @@ export default async function BlogPostPage({
           const insertCTAAfter = Math.min(3, Math.floor(post.body.length / 2));
           return (
             <div key={i}>
-              <p dangerouslySetInnerHTML={{ __html: paragraph }} />
+              <div dangerouslySetInnerHTML={{ __html: paragraph }} />
               {i === insertCTAAfter && post.body.length > 4 && (
                 <InlineCTA
                   title={`Questions about ${post.title.split("?")[0].split(":")[0].trim().slice(0, 70)}?`}
