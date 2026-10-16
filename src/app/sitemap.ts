@@ -53,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/videos", priority: 0.6, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     { path: "/blog/2026/10/how-to-change-jurisdiction-for-child-custody-in-florida", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/blog/2026/10/florida-divorce-marital-property-without-permission", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/10/free-consultation-family-law-questions", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/09/jacksonville-alimony-lawyer-main-issues", priority: 0.7, changeFrequency: "monthly" },
     { path: "/blog/2026/09/alimony-lawyer-orange-park-questions", priority: 0.8, changeFrequency: "monthly" },

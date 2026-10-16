@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 
 const route = readFileSync("src/app/blog/[year]/[month]/[slug]/page.tsx", "utf8");
+const sitemap = readFileSync("src/app/sitemap.ts", "utf8");
 const article = readFileSync(
   "src/app/blog/how-to-change-jurisdiction-for-child-custody-in-florida-body.ts",
   "utf8",
@@ -17,4 +18,7 @@ for (const block of ["<h2>", "<ol>", "<li>"]) {
     throw new Error(`Regression fixture is missing ${block} content.`);
   }
 }
-console.log("Blog body block rendering regression assertion passed.");
+if (!sitemap.includes("/blog/2026/10/how-to-change-jurisdiction-for-child-custody-in-florida")) {
+  throw new Error("New article is missing from the manually maintained sitemap.");
+}
+console.log("Blog body block rendering and sitemap regression assertions passed.");
