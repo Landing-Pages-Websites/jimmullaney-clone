@@ -21,6 +21,7 @@ import { floridaDivorceCourtBodyHtml } from "./divorce-court-body";
 import { parentalAlienationFloridaBodyHtml } from "./parental-alienation-florida-body";
 import { floridaStatute61075BodyHtml } from "./florida-statute-61-075-body";
 import { floridaDivorceMaritalPropertyWithoutPermissionBodyHtml } from "./florida-divorce-marital-property-without-permission-body";
+import { grandparentVisitationRightsFloridaBodyHtml } from "./grandparent-visitation-rights-florida-body";
 
 export type BlogPost = {
   year: string;
@@ -40,6 +41,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "grandparent-visitation-rights-florida",
+    title: "Grandparent Visitation Rights in Florida: What Families Should Know",
+    metaTitle: "Grandparent Visitation Rights in Florida",
+    publishedDate: "2026-10-19",
+    date: "October 19, 2026",
+    dateISO: "2026-10-19",
+    excerpt:
+      "Learn when Florida law may allow a grandparent to seek visitation, how parental rights shape the process, and what facts matter before filing.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/grandparent-visitation-rights-in-florida-what-families-should-know-746887.webp",
+    imageAlt: "Grandparent sharing a quiet moment with a young child at home",
+    body: grandparentVisitationRightsFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
