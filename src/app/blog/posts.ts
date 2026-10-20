@@ -121,13 +121,13 @@ export const posts: BlogPost[] = [
     year: "2026",
     month: "10",
     slug: "florida-statute-61-075-equitable-distribution-marital-assets-title",
-    title: "Florida Statute 61.075: Equitable Distribution of Marital Assets and Title",
-    metaTitle: "Florida Statute 61.075: Marital Assets, Title & Division",
+    title: "Florida Statute 61.075 and Equitable Distribution of Marital Assets",
+    metaTitle: "Florida Statute 61.075: Asset Division",
     publishedDate: "2026-10-15",
     date: "October 15, 2026",
     dateISO: "2026-10-15",
     excerpt:
-      "Learn how Florida Statute 61.075 addresses marital assets, debts, valuation, and title questions in equitable distribution. Review the basics before acting.",
+      "Learn how Florida Statute 61.075 addresses marital and nonmarital property, valuation, debts, and why an asset’s title alone may not decide division.",
     image:
       "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-statute-61075-and-equitable-distribution-of-marital-assets-854505.webp",
     imageAlt:
