@@ -124,10 +124,10 @@ export const posts: BlogPost[] = [
     date: "October 19, 2026",
     dateISO: "2026-10-19",
     excerpt:
-      "Learn when Florida law may allow a grandparent to seek visitation, how parental rights shape the process, and what facts matter before filing.",
+      "Grandparent visitation rights Florida families ask about depend on narrow statutory rules and specific facts. Learn what matters before filing.",
     image:
       "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/grandparent-visitation-rights-in-florida-what-families-should-know-746887.webp",
-    imageAlt: "Grandparent sharing a quiet moment with a young child at home",
+    imageAlt: "Grandparent and child discussing a Florida family visitation plan",
     body: grandparentVisitationRightsFloridaBodyHtml.split(
       /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
     ),
