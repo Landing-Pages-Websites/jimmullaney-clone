@@ -22,6 +22,7 @@ import { parentalAlienationFloridaBodyHtml } from "./parental-alienation-florida
 import { floridaStatute61075BodyHtml } from "./florida-statute-61-075-body";
 import { floridaDivorceMaritalPropertyWithoutPermissionBodyHtml } from "./florida-divorce-marital-property-without-permission-body";
 import { grandparentVisitationRightsFloridaBodyHtml } from "./grandparent-visitation-rights-florida-body";
+import { areWeddingRingsMaritalPropertyBodyHtml } from "./are-wedding-rings-marital-property-in-florida-divorce-body";
 
 export type BlogPost = {
   year: string;
@@ -41,6 +42,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "are-wedding-rings-marital-property-in-florida-divorce",
+    title: "Are Wedding Rings Marital Property in a Florida Divorce?",
+    metaTitle: "Are Wedding Rings Marital Property in Florida?",
+    publishedDate: "2026-10-20",
+    date: "October 20, 2026",
+    dateISO: "2026-10-20",
+    excerpt:
+      "Learn how Florida divorce courts may treat engagement and wedding rings, gifts, premarital ownership, and ring value when dividing property.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/are-wedding-rings-marital-property-in-a-florida-divorce-535891.webp",
+    imageAlt: "Wedding rings resting beside a jewelry box on a neutral tabletop",
+    body: areWeddingRingsMaritalPropertyBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
