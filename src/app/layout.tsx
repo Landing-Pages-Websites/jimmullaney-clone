@@ -4,6 +4,7 @@ import { Playfair_Display, Inter } from "next/font/google";
 import JsonLd from "./components/JsonLd";
 import { legalServiceSchema } from "./components/StructuredData";
 import StickyCTA from "./components/StickyCTA";
+import GomegaReviewBridge from "./components/analytics/GomegaReviewBridge";
 import "./globals.css";
 
 const inter = Inter({
@@ -69,6 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
+        <GomegaReviewBridge />
         <JsonLd data={legalServiceSchema} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EJVY8C3R7H"
