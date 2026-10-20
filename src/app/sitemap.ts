@@ -53,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/videos", priority: 0.6, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     { path: "/blog/2026/10/are-wedding-rings-marital-property-in-florida-divorce", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/blog/2026/10/florida-equitable-distribution-marital-home-titled-one-spouse", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/10/grandparent-visitation-rights-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/10/how-to-change-jurisdiction-for-child-custody-in-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/10/florida-divorce-marital-property-without-permission", priority: 0.8, changeFrequency: "monthly" },

@@ -23,6 +23,7 @@ import { floridaStatute61075BodyHtml } from "./florida-statute-61-075-body";
 import { floridaDivorceMaritalPropertyWithoutPermissionBodyHtml } from "./florida-divorce-marital-property-without-permission-body";
 import { grandparentVisitationRightsFloridaBodyHtml } from "./grandparent-visitation-rights-florida-body";
 import { areWeddingRingsMaritalPropertyBodyHtml } from "./are-wedding-rings-marital-property-in-florida-divorce-body";
+import { floridaEquitableDistributionMaritalHomeBodyHtml } from "./florida-equitable-distribution-marital-home-titled-one-spouse-body";
 
 export type BlogPost = {
   year: string;
@@ -42,6 +43,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "florida-equitable-distribution-marital-home-titled-one-spouse",
+    title: "Florida Equitable Distribution: When the Marital Home Is Titled to One Spouse",
+    metaTitle: "Florida Divorce: Home Titled to One Spouse",
+    publishedDate: "2026-10-20",
+    date: "October 20, 2026",
+    dateISO: "2026-10-20",
+    excerpt:
+      "Learn how Florida courts may assess a home titled to one spouse, including marital contributions, equity, mortgage debt, and possible division options.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-equitable-distribution-when-the-marital-home-is-titled-to-one-spouse-567044.webp",
+    imageAlt: "A couple reviewing home documents with a family law professional at a table",
+    body: floridaEquitableDistributionMaritalHomeBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
@@ -102,13 +121,13 @@ export const posts: BlogPost[] = [
     year: "2026",
     month: "10",
     slug: "florida-statute-61-075-equitable-distribution-marital-assets-title",
-    title: "Florida Statute 61.075 and Equitable Distribution of Marital Assets",
-    metaTitle: "Florida Statute 61.075: Asset Division",
+    title: "Florida Statute 61.075: Equitable Distribution of Marital Assets and Title",
+    metaTitle: "Florida Statute 61.075: Marital Assets, Title & Division",
     publishedDate: "2026-10-15",
     date: "October 15, 2026",
     dateISO: "2026-10-15",
     excerpt:
-      "Learn how Florida Statute 61.075 addresses marital and nonmarital property, valuation, debts, and why an asset’s title alone may not decide division.",
+      "Learn how Florida Statute 61.075 addresses marital assets, debts, valuation, and title questions in equitable distribution. Review the basics before acting.",
     image:
       "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-statute-61075-and-equitable-distribution-of-marital-assets-854505.webp",
     imageAlt:
