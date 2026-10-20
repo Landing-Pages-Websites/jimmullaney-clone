@@ -16,6 +16,7 @@ import { alimonyLawyerOrangeParkQuestionsBody } from "./alimony-lawyer-orange-pa
 import { childSupportLawyerOrangeParkBody } from "./child-support-lawyer-orange-park-body";
 import { freeConsultationFamilyLawQuestionsBodyHtml } from "./free-consultation-family-law-questions-body";
 import { familyLawMediationStAugustineBody } from "./family-law-mediation-st-augustine-process-body"
+import { militaryDivorceMediationProcessBodyHtml } from "./military-divorce-mediation-process-florida-body";
 import { familyLawGuidanceOrangeParkBodyHtml } from "./family-law-guidance-orange-park-body";
 import { floridaDivorceCourtBodyHtml } from "./divorce-court-body";
 import { parentalAlienationFloridaBodyHtml } from "./parental-alienation-florida-body";
@@ -60,6 +61,23 @@ export const posts: BlogPost[] = [
     body: floridaEquitableDistributionMaritalHomeBodyHtml.split(
       /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
     ),
+  },
+  {
+    year: "2026",
+    month: "10",
+    slug: "military-divorce-mediation-process-florida",
+    title: "Military Divorce Mediation Process in Florida",
+    metaTitle: "Military Divorce Mediation Process: Florida Guide",
+    publishedDate: "2026-10-20",
+    date: "October 20, 2026",
+    dateISO: "2026-10-20",
+    excerpt:
+      "Learn the military divorce mediation process in Florida, including preparation, deployment scheduling, parenting, retirement, benefits, and legal review.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/military-divorce-mediation-process-in-florida-337566.webp",
+    imageAlt:
+      "Military couple discussing the military divorce mediation process with a family law professional",
+    body: militaryDivorceMediationProcessBodyHtml,
   },
   {
     year: "2026",
