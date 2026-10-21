@@ -1,3 +1,4 @@
+import { postnuptialAgreementCostFloridaBodyHtml } from "./postnuptial-agreement-cost-florida-body";
 import { collaborativeDivorceInFloridaBodyHtml } from "./collaborative-divorce-in-florida-body";
 import { floridaRestrainingOrdersBodyHtml } from "./florida-restraining-orders-what-to-know-before-you-file-body";
 import { alimonyAttorneyStJohnsIssuesBodyHtml } from "./alimony-attorney-st-johns-issues-body";
@@ -45,6 +46,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+    {
+    year: "2026",
+    month: "10",
+    slug: "postnuptial-agreement-cost-florida",
+    title: "Postnuptial Agreement Cost in Florida: Fees and Planning Factors",
+    metaTitle: "Postnuptial Agreement Cost in Florida: Key Factors",
+    publishedDate: "2026-10-21",
+    date: "October 21, 2026",
+    dateISO: "2026-10-21",
+    excerpt:
+      "Learn what can affect the cost of a Florida postnuptial agreement, from financial disclosure and asset complexity to negotiation and revisions.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/postnuptial-agreement-cost-in-florida-fees-and-planning-factors-776340.webp",
+    imageAlt:
+      "A married couple reviewing financial documents with an attorney in a calm office setting",
+    body: postnuptialAgreementCostFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
