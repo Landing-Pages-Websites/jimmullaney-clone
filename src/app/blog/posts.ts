@@ -1,3 +1,4 @@
+import { internationalChildCustodyFloridaBodyHtml } from "./international-child-custody-florida-body";
 import { postnuptialAgreementCostFloridaBodyHtml } from "./postnuptial-agreement-cost-florida-body";
 import { collaborativeDivorceInFloridaBodyHtml } from "./collaborative-divorce-in-florida-body";
 import { floridaRestrainingOrdersBodyHtml } from "./florida-restraining-orders-what-to-know-before-you-file-body";
@@ -45,7 +46,7 @@ export type BlogPost = {
 
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
-export const posts: BlogPost[] = [
+export const posts: BlogPost[] = [  { year: "2026", month: "10", slug: "international-child-custody-florida", title: "International Child Custody in Florida: Jurisdiction and Enforcement Basics", metaTitle: "International Child Custody in Florida: Key Basics", publishedDate: "2026-10-22", date: "October 22, 2026", dateISO: "2026-10-22", excerpt: "Learn how Florida jurisdiction, the UCCJEA, Hague Convention issues, travel plans, and enforcement can affect an international child custody dispute.", image: "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/international-child-custody-in-florida-jurisdiction-and-enforcement-basics-280408.webp", imageAlt: "Parent reviewing travel documents and a parenting plan with a child at a table", body: internationalChildCustodyFloridaBodyHtml.split(/(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/), },
     {
     year: "2026",
     month: "10",
