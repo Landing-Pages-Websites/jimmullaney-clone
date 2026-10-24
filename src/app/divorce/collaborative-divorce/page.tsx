@@ -85,6 +85,7 @@ export default function CollaborativeDivorcePage() {
         <li>There are children, and the parties will need to co-parent for years</li>
         <li>There are family businesses, closely-held assets, or complex financial structures that benefit from a neutral financial professional</li>
         <li>Emotional dynamics (one spouse leaving, a long marriage ending) need the support of a mental-health facilitator</li>
+        <li>One spouse is serving in the military and the family needs to consider <Link href="/divorce/military-divorce/">military-specific divorce issues</Link> alongside the choice of process</li>
       </ul>
 
       <h2>When Collaborative Is Not the Right Fit</h2>
