@@ -1,3 +1,4 @@
+import { annulmentInFloridaBodyHtml } from "./annulment-in-florida-body";
 import { floridaDivorceAttorneyFeesBodyHtml } from "./can-a-court-order-one-spouse-to-pay-attorney-fees-in-a-florida-divorce-body";
 import { internationalChildCustodyFloridaBodyHtml } from "./international-child-custody-florida-body";
 import { postnuptialAgreementCostFloridaBodyHtml } from "./postnuptial-agreement-cost-florida-body";
@@ -48,6 +49,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "annulment-in-florida",
+    title: "Annulment in Florida: Grounds, Requirements, and Alternatives",
+    metaTitle: "Annulment in Florida: Grounds and Alternatives",
+    publishedDate: "2026-10-26",
+    date: "October 26, 2026",
+    dateISO: "2026-10-26",
+    excerpt:
+      "Learn how a Florida annulment differs from divorce, which circumstances may support one, how ratification can affect a claim, and when divorce may fit better.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/annulment-in-florida-grounds-requirements-and-alternatives-994657.webp",
+    imageAlt:
+      "A couple reviewing marriage documents with a legal professional in a quiet office",
+    body: annulmentInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
