@@ -1,3 +1,4 @@
+import { separateBankAccountsMaritalPropertyFloridaBodyHtml } from "./are-separate-bank-accounts-considered-marital-property-in-florida-body";
 import { annulmentInFloridaBodyHtml } from "./annulment-in-florida-body";
 import { floridaDivorceAttorneyFeesBodyHtml } from "./can-a-court-order-one-spouse-to-pay-attorney-fees-in-a-florida-divorce-body";
 import { internationalChildCustodyFloridaBodyHtml } from "./international-child-custody-florida-body";
@@ -49,6 +50,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "are-separate-bank-accounts-considered-marital-property-in-florida",
+    title: "Are Separate Bank Accounts Marital Property in Florida?",
+    metaTitle: "Are Separate Bank Accounts Marital Property in Florida?",
+    publishedDate: "2026-10-26",
+    date: "October 26, 2026",
+    dateISO: "2026-10-26",
+    excerpt:
+      "Learn how Florida divorce courts may treat separately titled accounts, marital income, commingling, and records used to support a nonmarital claim.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/are-separate-bank-accounts-marital-property-in-florida-344553.webp",
+    imageAlt:
+      "Separate bank statements and account records arranged on a desk during divorce planning",
+    body: separateBankAccountsMaritalPropertyFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
