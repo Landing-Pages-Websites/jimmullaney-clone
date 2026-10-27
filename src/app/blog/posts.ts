@@ -1,3 +1,4 @@
+import { howDoesDisabilityAffectDivorceFloridaBodyHtml } from "./how-does-disability-affect-divorce-in-florida-body";
 import { canSocialSecurityBeTouchedInADivorceInFloridaBodyHtml } from "./can-social-security-be-touched-in-a-divorce-in-florida-body";
 import { whoPaysForHealthInsuranceAfterDivorceFloridaBodyHtml } from "./who-pays-for-health-insurance-after-divorce-in-florida-body";
 import { separateBankAccountsMaritalPropertyFloridaBodyHtml } from "./are-separate-bank-accounts-considered-marital-property-in-florida-body";
@@ -52,6 +53,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "how-does-disability-affect-divorce-in-florida",
+    title: "How Does Disability Affect Divorce in Florida?",
+    metaTitle: "How Does Disability Affect Divorce in Florida?",
+    publishedDate: "2026-10-27",
+    date: "October 27, 2026",
+    dateISO: "2026-10-27",
+    excerpt:
+      "How does disability affect divorce in Florida? See how benefits, alimony, parenting, and court access change, and which calls a lawyer does not make.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-does-disability-affect-divorce-in-florida-231118.webp",
+    imageAlt:
+      "An attorney and a client reviewing divorce papers together at a desk in a Florida law office",
+    body: howDoesDisabilityAffectDivorceFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
