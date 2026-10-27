@@ -20,7 +20,11 @@ export default function DomesticViolencePage() {
         and your immigration, employment, and professional licensing status
         &mdash; sometimes permanently. Whether you need protection or are
         defending against allegations, you should have experienced family-
-        law counsel from the first hearing.
+        law counsel from the first hearing. For a plain-language overview of
+        what qualifies as domestic violence in Florida, watch the video{" "}
+        <a href="https://www.jimmullaney.com/videos/domestic-violence/what-is-domestic-violence-in-florida/">
+          What Is Domestic Violence in Florida?
+        </a>
       </p>
 
       <h2>The Five Types of Florida Injunctions</h2>
@@ -62,6 +66,13 @@ export default function DomesticViolencePage() {
       />
 
       <h2>How the Process Works</h2>
+      <p>
+        For a visual explanation of domestic-violence injunctions and hearings,
+        explore our{" "}
+        <a href="https://www.jimmullaney.com/videos/domestic-violence/">
+          domestic violence video library
+        </a>.
+      </p>
       <ol>
         <li>
           <strong>Petition.</strong> The petitioner files a sworn petition
