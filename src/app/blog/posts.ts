@@ -1,3 +1,4 @@
+import { whoPaysForHealthInsuranceAfterDivorceFloridaBodyHtml } from "./who-pays-for-health-insurance-after-divorce-in-florida-body";
 import { separateBankAccountsMaritalPropertyFloridaBodyHtml } from "./are-separate-bank-accounts-considered-marital-property-in-florida-body";
 import { annulmentInFloridaBodyHtml } from "./annulment-in-florida-body";
 import { floridaDivorceAttorneyFeesBodyHtml } from "./can-a-court-order-one-spouse-to-pay-attorney-fees-in-a-florida-divorce-body";
@@ -50,6 +51,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "who-pays-for-health-insurance-after-divorce-in-florida",
+    title: "Who Pays for Health Insurance After Divorce in Florida?",
+    metaTitle: "Who Pays for Health Insurance After Divorce in Florida",
+    publishedDate: "2026-10-27",
+    date: "October 27, 2026",
+    dateISO: "2026-10-27",
+    excerpt:
+      "Learn how Florida divorce agreements address children's health insurance, former-spouse coverage, COBRA, and medical support without assuming one rule fits all.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/who-pays-for-health-insurance-after-divorce-in-florida-702061.webp",
+    imageAlt:
+      "Divorcing parents reviewing health insurance paperwork at a table",
+    body: whoPaysForHealthInsuranceAfterDivorceFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
