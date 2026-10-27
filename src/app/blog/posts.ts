@@ -1,3 +1,4 @@
+import { canSocialSecurityBeTouchedInADivorceInFloridaBodyHtml } from "./can-social-security-be-touched-in-a-divorce-in-florida-body";
 import { whoPaysForHealthInsuranceAfterDivorceFloridaBodyHtml } from "./who-pays-for-health-insurance-after-divorce-in-florida-body";
 import { separateBankAccountsMaritalPropertyFloridaBodyHtml } from "./are-separate-bank-accounts-considered-marital-property-in-florida-body";
 import { annulmentInFloridaBodyHtml } from "./annulment-in-florida-body";
@@ -51,6 +52,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "can-social-security-be-touched-in-a-divorce-in-florida",
+    title: "Can Social Security Be Divided in a Florida Divorce?",
+    metaTitle: "Can Social Security Be Divided in a Florida Divorce?",
+    publishedDate: "2026-10-27",
+    date: "October 27, 2026",
+    dateISO: "2026-10-27",
+    excerpt:
+      "Learn how federal Social Security rules affect Florida property division and retirement planning, and what to discuss with your family law attorney.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/can-social-security-be-divided-in-a-florida-divorce-558580.webp",
+    imageAlt:
+      "Divorcing couple reviewing retirement paperwork at a table",
+    body: canSocialSecurityBeTouchedInADivorceInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
