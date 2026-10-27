@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/florida-child-support-calculator", priority: 0.9, changeFrequency: "yearly" },
     { path: "/videos", priority: 0.6, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
+    { path: "/blog/2026/10/can-social-security-be-touched-in-a-divorce-in-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/10/who-pays-for-health-insurance-after-divorce-in-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/10/are-separate-bank-accounts-considered-marital-property-in-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/10/annulment-in-florida", priority: 0.8, changeFrequency: "monthly" },
