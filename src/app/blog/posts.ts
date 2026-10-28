@@ -1,3 +1,4 @@
+import { howHardIsItToSellAHouseDuringADivorceInFloridaBodyHtml } from "./how-hard-is-it-to-sell-a-house-during-a-divorce-in-florida-body";
 import { howDoesDisabilityAffectDivorceFloridaBodyHtml } from "./how-does-disability-affect-divorce-in-florida-body";
 import { canSocialSecurityBeTouchedInADivorceInFloridaBodyHtml } from "./can-social-security-be-touched-in-a-divorce-in-florida-body";
 import { whoPaysForHealthInsuranceAfterDivorceFloridaBodyHtml } from "./who-pays-for-health-insurance-after-divorce-in-florida-body";
@@ -53,6 +54,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "how-hard-is-it-to-sell-a-house-during-a-divorce-in-florida",
+    title: "How Hard Is It to Sell a House During a Divorce in Florida?",
+    metaTitle: "Selling a House During Divorce in Florida",
+    publishedDate: "2026-10-28",
+    date: "October 28, 2026",
+    dateISO: "2026-10-28",
+    excerpt:
+      "Learn how consent, court orders, valuation, mortgage obligations, and sale proceeds can affect selling a home during a Florida divorce.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-hard-is-it-to-sell-a-house-during-a-divorce-in-florida-598047.webp",
+    imageAlt: "Florida home with divorce documents on a table",
+    body: howHardIsItToSellAHouseDuringADivorceInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
