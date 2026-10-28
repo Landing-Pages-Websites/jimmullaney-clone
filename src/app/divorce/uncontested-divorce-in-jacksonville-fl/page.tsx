@@ -1,5 +1,6 @@
 import InnerPage from "../../components/InnerPage";
 import InlineCTA from "../../components/InlineCTA";
+import JsonLd from "../../components/JsonLd";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -20,6 +21,38 @@ export const metadata: Metadata = {
   },
 };
 
+const uncontestedDivorceServiceSchema: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.jimmullaney.com/divorce/uncontested-divorce-in-jacksonville-fl/#service",
+  name: "Uncontested Divorce",
+  description:
+    "An uncontested divorce is usually the fastest and least expensive way to get divorced in Florida. It avoids the cost, delay, and uncertainty of contested litigation because the spouses are not asking a judge to decide their issues. Instead, the spouses have already reached an agreement and need the paperwork drafted, filed, approved, and finalized correctly.",
+  serviceType: "Uncontested Divorce",
+  provider: {
+    "@id": "https://www.jimmullaney.com/#legal-service",
+  },
+  areaServed: [
+    {
+      "@type": "AdministrativeArea",
+      name: "Duval County",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Clay County",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "St. Johns County",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Nassau County",
+    },
+  ],
+  url: "https://www.jimmullaney.com/divorce/uncontested-divorce-in-jacksonville-fl/",
+};
+
 export default function UncontestedDivorcePage() {
   return (
     <InnerPage
@@ -29,6 +62,7 @@ export default function UncontestedDivorcePage() {
         { label: "Uncontested Divorce" },
       ]}
     >
+      <JsonLd data={uncontestedDivorceServiceSchema} />
       <p>
         An uncontested divorce is a dissolution of marriage in which both
         spouses have agreed on every issue &mdash; how property and debts will
