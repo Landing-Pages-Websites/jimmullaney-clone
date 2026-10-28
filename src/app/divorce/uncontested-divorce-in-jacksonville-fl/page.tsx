@@ -1,6 +1,5 @@
 import InnerPage from "../../components/InnerPage";
 import InlineCTA from "../../components/InlineCTA";
-import JsonLd from "../../components/JsonLd";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -62,7 +61,12 @@ export default function UncontestedDivorcePage() {
         { label: "Uncontested Divorce" },
       ]}
     >
-      <JsonLd data={uncontestedDivorceServiceSchema} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(uncontestedDivorceServiceSchema),
+        }}
+      />
       <p>
         An uncontested divorce is a dissolution of marriage in which both
         spouses have agreed on every issue &mdash; how property and debts will
