@@ -3,6 +3,19 @@ import JsonLd from "../components/JsonLd";
 import { contactFaqSchema } from "../components/StructuredData";
 import type { Metadata } from "next";
 
+const contactPageSchema: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "https://www.jimmullaney.com/contact/#contactpage",
+  url: "https://www.jimmullaney.com/contact/",
+  name: "Contact Law Office of A. James Mullaney",
+  description:
+    "While this website provides general information, it does not constitute legal advice. The best way to get guidance on your specific legal issue is to contact a lawyer. To schedule a meeting with an attorney, please call the firm or complete the intake form below.",
+  mainEntity: {
+    "@id": "https://www.jimmullaney.com/#legal-service",
+  },
+};
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -15,6 +28,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+    <JsonLd data={contactPageSchema} />
     <JsonLd data={contactFaqSchema} />
     <InnerPage
       title="Contact Law Office of A. James Mullaney"
