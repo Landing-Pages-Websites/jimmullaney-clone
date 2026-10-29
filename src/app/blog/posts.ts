@@ -1,3 +1,4 @@
+import { divorceWhileInChapter7BankruptcyFloridaBodyHtml } from "./divorce-while-in-chapter-7-bankruptcy-florida-body";
 import { howHardIsItToSellAHouseDuringADivorceInFloridaBodyHtml } from "./how-hard-is-it-to-sell-a-house-during-a-divorce-in-florida-body";
 import { howDoesDisabilityAffectDivorceFloridaBodyHtml } from "./how-does-disability-affect-divorce-in-florida-body";
 import { canSocialSecurityBeTouchedInADivorceInFloridaBodyHtml } from "./can-social-security-be-touched-in-a-divorce-in-florida-body";
@@ -54,6 +55,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "10",
+    slug: "divorce-while-in-chapter-7-bankruptcy-florida",
+    title: "Divorce While in Chapter 7 Bankruptcy in Florida: What to Consider",
+    metaTitle: "Divorce While in Chapter 7 Bankruptcy in Florida",
+    publishedDate: "2026-10-29",
+    date: "October 29, 2026",
+    dateISO: "2026-10-29",
+    excerpt:
+      "Learn how a pending Chapter 7 case may affect Florida divorce timing, property division, marital debts, and coordination with bankruptcy counsel.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/divorce-while-in-chapter-7-bankruptcy-in-florida-what-to-consider-437161.webp",
+    imageAlt: "A couple reviewing financial and legal documents at a table",
+    body: divorceWhileInChapter7BankruptcyFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
