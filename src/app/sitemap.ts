@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/florida-child-support-calculator", priority: 0.9, changeFrequency: "yearly" },
     { path: "/videos", priority: 0.6, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
+    { path: "/blog/2026/11/how-to-determine-business-value-divorce", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/can-my-wife-take-my-crypto-in-a-divorce", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/10/divorce-while-in-chapter-7-bankruptcy-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/10/how-hard-is-it-to-sell-a-house-during-a-divorce-in-florida", priority: 0.8, changeFrequency: "monthly" },

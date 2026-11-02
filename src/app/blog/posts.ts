@@ -1,3 +1,4 @@
+import { howToDetermineBusinessValueDivorceBodyHtml } from "./how-to-determine-business-value-divorce-body";
 import { canMyWifeTakeMyCryptoInADivorceBodyHtml } from "./can-my-wife-take-my-crypto-in-a-divorce-body";
 import { divorceWhileInChapter7BankruptcyFloridaBodyHtml } from "./divorce-while-in-chapter-7-bankruptcy-florida-body";
 import { howHardIsItToSellAHouseDuringADivorceInFloridaBodyHtml } from "./how-hard-is-it-to-sell-a-house-during-a-divorce-in-florida-body";
@@ -56,6 +57,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "how-to-determine-business-value-divorce",
+    title: "How to Determine the Value of a Business in a Florida Divorce",
+    metaTitle: "Business Value in a Florida Divorce: How to Determine It",
+    publishedDate: "2026-11-02",
+    date: "November 2, 2026",
+    dateISO: "2026-11-02",
+    excerpt:
+      "Learn how Florida divorce business valuation considers records, ownership, marital and nonmarital interests, goodwill, and expert analysis.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-to-determine-the-value-of-a-business-in-a-florida-divorce-488797.webp",
+    imageAlt: "Business owner reviewing financial records with an adviser at a desk",
+    body: howToDetermineBusinessValueDivorceBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
