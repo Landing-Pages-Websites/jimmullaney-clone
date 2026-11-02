@@ -1,6 +1,56 @@
 import InnerPage from "../../components/InnerPage";
+import JsonLd from "../../components/JsonLd";
 import Link from "next/link";
 import type { Metadata } from "next";
+
+const equitableDistributionSchema: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://www.jimmullaney.com/divorce/equitable-distribution/#service",
+      name: "Jacksonville Equitable Distribution Lawyer",
+      serviceType: "Equitable Distribution",
+      description:
+        "Property division in a Florida divorce is called equitable distribution. \u201cEquitable\u201d means fair. It does not always mean perfectly equal, although courts usually begin with the idea that marital assets and marital debts should be divided equally unless there is a legally sufficient reason to do something different.",
+      provider: {
+        "@id": "https://www.jimmullaney.com/#legal-service",
+      },
+      url: "https://www.jimmullaney.com/divorce/equitable-distribution/",
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.jimmullaney.com/divorce/equitable-distribution/#faq",
+      url: "https://www.jimmullaney.com/divorce/equitable-distribution/",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What Counts as Marital Property in Florida?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Marital property generally includes assets acquired during the marriage, regardless of whose name is on the title. That can include the marital home, vehicles, bank accounts, retirement benefits earned during the marriage, investment accounts, business interests, furniture, valuable personal property, and other assets accumulated while married. Marital debts are also divided. Credit card balances, mortgages, car loans, tax debts, business obligations, and other liabilities may be part of the marital estate if they were incurred during the marriage or for marital purposes.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What Is Nonmarital Property?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nonmarital property is generally property owned before the marriage, inheritances, gifts from someone other than a spouse, and certain assets protected by a valid agreement. But the label is not always simple. Nonmarital property can become partly marital if it is commingled, retitled jointly, used for marital purposes, or increased in value because of marital labor or marital funds. For example, a house owned before marriage may remain nonmarital in part, but mortgage reduction, renovations paid from marital funds, or active appreciation during the marriage may create a marital component. A business started before marriage may still have marital value if it grew during the marriage because of work performed by either spouse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is Property Always Divided 50/50?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Not always. Florida courts begin with the premise that equal distribution is usually fair. But a judge may order an unequal distribution after considering statutory factors, including each spouse’s contributions to the marriage, the economic circumstances of the parties, the length of the marriage, career interruptions, contributions to the other spouse’s career or education, intentional waste of assets, and the desirability of keeping certain assets intact. Unequal distribution is not awarded simply because one spouse is angry or because one spouse earned more money. There must be evidence supporting why a different division is fair under Florida law.",
+          },
+        },
+      ],
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "Jacksonville Equitable Distribution Attorney | Florida §61.075",
@@ -11,13 +61,15 @@ export const metadata: Metadata = {
 
 export default function EquitableDistributionPage() {
   return (
-    <InnerPage
-      title="Jacksonville Equitable Distribution Attorney"
-      breadcrumbs={[
-        { label: "Divorce", href: "/divorce" },
-        { label: "Equitable Distribution" },
-      ]}
-    >
+    <>
+      <JsonLd data={equitableDistributionSchema} />
+      <InnerPage
+        title="Jacksonville Equitable Distribution Attorney"
+        breadcrumbs={[
+          { label: "Divorce", href: "/divorce" },
+          { label: "Equitable Distribution" },
+        ]}
+      >
       <p>
         Florida is an <strong>equitable distribution</strong> state, not a
         community property state. &ldquo;Equitable&rdquo; means fair &mdash;
@@ -165,6 +217,7 @@ export default function EquitableDistributionPage() {
         <a href="tel:+1-904-858-4334">904-858-4334</a> or{" "}
         <Link href="/contact">contact me online</Link>.
       </p>
-    </InnerPage>
+      </InnerPage>
+    </>
   );
 }
