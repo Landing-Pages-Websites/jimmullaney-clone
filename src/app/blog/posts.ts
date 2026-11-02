@@ -1,3 +1,4 @@
+import { whatHappensToStockOptionsDuringADivorceBodyHtml } from "./what-happens-to-stock-options-during-a-divorce-body";
 import { howToDetermineBusinessValueDivorceBodyHtml } from "./how-to-determine-business-value-divorce-body";
 import { canMyWifeTakeMyCryptoInADivorceBodyHtml } from "./can-my-wife-take-my-crypto-in-a-divorce-body";
 import { divorceWhileInChapter7BankruptcyFloridaBodyHtml } from "./divorce-while-in-chapter-7-bankruptcy-florida-body";
@@ -57,6 +58,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "what-happens-to-stock-options-during-a-divorce",
+    title: "What Happens to Stock Options During a Florida Divorce?",
+    metaTitle: "Stock Options in a Florida Divorce: What to Know",
+    publishedDate: "2026-11-02",
+    date: "November 2, 2026",
+    dateISO: "2026-11-02",
+    excerpt:
+      "Learn how Florida divorce may treat stock options and restricted equity, including vesting, valuation, tracing, disclosure, and equitable distribution.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/what-happens-to-stock-options-during-a-florida-divorce-296964.webp",
+    imageAlt: "Documents and laptop showing a stock compensation award during divorce planning",
+    body: whatHappensToStockOptionsDuringADivorceBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
