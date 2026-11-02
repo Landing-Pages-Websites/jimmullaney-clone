@@ -1,3 +1,4 @@
+import { canMyWifeTakeMyCryptoInADivorceBodyHtml } from "./can-my-wife-take-my-crypto-in-a-divorce-body";
 import { divorceWhileInChapter7BankruptcyFloridaBodyHtml } from "./divorce-while-in-chapter-7-bankruptcy-florida-body";
 import { howHardIsItToSellAHouseDuringADivorceInFloridaBodyHtml } from "./how-hard-is-it-to-sell-a-house-during-a-divorce-in-florida-body";
 import { howDoesDisabilityAffectDivorceFloridaBodyHtml } from "./how-does-disability-affect-divorce-in-florida-body";
@@ -55,6 +56,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "can-my-wife-take-my-crypto-in-a-divorce",
+    title: "Can My Spouse Take My Cryptocurrency in a Florida Divorce?",
+    metaTitle: "Can My Spouse Take My Crypto in a Divorce?",
+    publishedDate: "2026-11-02",
+    date: "November 2, 2026",
+    dateISO: "2026-11-02",
+    excerpt:
+      "Learn how Florida divorce law may treat cryptocurrency, what to disclose, how crypto can be valued and traced, and steps to preserve records lawfully.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/can-my-spouse-take-my-cryptocurrency-in-a-florida-divorce-490980.webp",
+    imageAlt: "Person reviewing cryptocurrency account records on a laptop during divorce financial planning",
+    body: canMyWifeTakeMyCryptoInADivorceBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "10",
