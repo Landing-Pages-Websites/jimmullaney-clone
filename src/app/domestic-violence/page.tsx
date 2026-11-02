@@ -4,9 +4,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Jacksonville Domestic Violence Injunction Lawyer | Florida",
+  title: "Jacksonville Domestic Violence Lawyer | Florida Injunctions §741.30",
   description:
-    "Jacksonville domestic violence injunction lawyer helping petitioners and respondents understand Florida protective-order options, hearings, and next steps.",
+    "Jacksonville domestic violence injunction attorney. Representation for petitioners seeking protection and respondents defending against allegations. Call 904-858-4334.",
   alternates: { canonical: "/domestic-violence" },
 };
 
