@@ -1,3 +1,4 @@
+import { howToAdoptAChildBodyHtml } from "./how-to-adopt-a-child-body";
 import { whatHappensToStockOptionsDuringADivorceBodyHtml } from "./what-happens-to-stock-options-during-a-divorce-body";
 import { howToDetermineBusinessValueDivorceBodyHtml } from "./how-to-determine-business-value-divorce-body";
 import { canMyWifeTakeMyCryptoInADivorceBodyHtml } from "./can-my-wife-take-my-crypto-in-a-divorce-body";
@@ -58,6 +59,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "how-to-adopt-a-child",
+    title: "How to Adopt a Child in Florida: Process and Requirements",
+    metaTitle: "How to Adopt a Child in Florida",
+    publishedDate: "2026-11-03",
+    date: "November 3, 2026",
+    dateISO: "2026-11-03",
+    excerpt:
+      "Learn how to adopt a child in Florida, compare common adoption paths, prepare for screening and court steps, and understand when legal guidance may help.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-to-adopt-a-child-in-florida-process-and-requirements-406816.webp",
+    imageAlt: "A family sharing a quiet moment together at home",
+    body: howToAdoptAChildBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
