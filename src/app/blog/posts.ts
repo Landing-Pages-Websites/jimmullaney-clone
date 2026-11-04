@@ -1,3 +1,4 @@
+import { floridaFamilyLawAppellateMediationBodyHtml } from "./florida-family-law-appellate-mediation-body";
 import { whatCanBeUsedAgainstYouInADivorceInFloridaBodyHtml } from "./what-can-be-used-against-you-in-a-divorce-in-florida-body";
 import { howToAdoptAChildBodyHtml } from "./how-to-adopt-a-child-body";
 import { whatHappensToStockOptionsDuringADivorceBodyHtml } from "./what-happens-to-stock-options-during-a-divorce-body";
@@ -60,6 +61,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "florida-family-law-appellate-mediation",
+    title: "Family Law Appellate Mediation in Florida: When It May Help",
+    metaTitle: "Florida Family Law Appellate Mediation: When It May Help",
+    publishedDate: "2026-11-04",
+    date: "November 4, 2026",
+    dateISO: "2026-11-04",
+    excerpt:
+      "Learn how Florida family law appellate mediation differs from trial-level mediation, when it may be available, and what to discuss with your attorney.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/family-law-appellate-mediation-in-florida-when-it-may-help-548111.webp",
+    imageAlt: "Two attorneys and clients reviewing appeal documents at a mediation table",
+    body: floridaFamilyLawAppellateMediationBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
