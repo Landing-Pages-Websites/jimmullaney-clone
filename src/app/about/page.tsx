@@ -8,6 +8,22 @@ import type { Metadata } from "next";
 import JsonLd from "../components/JsonLd";
 import { breadcrumbSchema } from "../components/StructuredData";
 
+const aboutPageSchema: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": "https://www.jimmullaney.com/about/",
+  url: "https://www.jimmullaney.com/about/",
+  name: "Jacksonville Family Law Attorney and Mediator",
+  description:
+    "There is no doubt that your family-law dispute can cause a great deal of stress. Very often, clients face a complete change to their lifestyle. Because I have practiced exclusively as a family-law attorney for more than twenty-five years, I've seen how these cases affect clients — and I will do my best to make sure you are not overwhelmed by the process.",
+  mainEntity: {
+    "@id": "https://www.jimmullaney.com/#legal-service",
+  },
+  about: {
+    "@id": "https://www.jimmullaney.com/attorney/mullaney-a-james/#person",
+  },
+};
+
 export const metadata: Metadata = {
   title: "About a Jacksonville Family Law Attorney & Florida Certified Mediator",
   description:
@@ -20,6 +36,7 @@ export default function AboutPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
+      <JsonLd data={aboutPageSchema} />
       <Header />
       <PageHero title="Jacksonville Family Law Attorney and Mediator" breadcrumbs={breadcrumbs} />
 
