@@ -29,6 +29,57 @@ export default function ContestedDivorcePage() {
         necessary, I have the trial experience to protect your interests.
       </p>
 
+      <h2>Your First Consultation and Preparing for a Contested Divorce</h2>
+      <p>
+        Your initial consultation is a focused conversation about where your
+        case stands and what needs attention first. We will identify the
+        issues you and your spouse agree on, the issues that remain contested,
+        and whether negotiation, mediation, or litigation may be the
+        appropriate path for each issue. Litigation may be necessary when
+        important matters cannot be resolved, but understanding the issues
+        early can help you make informed decisions and avoid spending time and
+        money on disputes that do not move the case forward.
+      </p>
+
+      <h3>What to Bring</h3>
+      <ul>
+        <li>
+          Any petition, answer, counter-petition, court orders, hearing
+          notices, or other filed papers you have received.
+        </li>
+        <li>
+          A short list of the issues you believe are unresolved, including
+          property, debt, support, parenting, or other concerns.
+        </li>
+        <li>
+          Recent information about income, accounts, real estate, businesses,
+          retirement, insurance, and significant debts.
+        </li>
+        <li>
+          Questions about immediate concerns, upcoming deadlines, parenting
+          arrangements, and the result you hope to work toward.
+        </li>
+      </ul>
+
+      <h3>How to Prepare</h3>
+      <p>
+        Before the consultation, write down upcoming deadlines, hearings,
+        immediate concerns, and questions. Gather the records you have, keep
+        copies of important communications and financial documents, and avoid
+        deleting or altering information that may be relevant to the case. You
+        do not need a perfectly organized file before seeking guidance; the
+        goal is to identify what information is available and what may be
+        needed next.
+      </p>
+
+      <p>
+        <strong>
+          <Link href="/contact">Schedule Your Consultation</Link>
+        </strong>{" "}
+        to discuss your contested Florida divorce and the next practical
+        steps.
+      </p>
+
       <h2>The Contested Divorce Process</h2>
       <ol>
         <li>
