@@ -1,3 +1,4 @@
+import { floridaDivorceRecordsBodyHtml } from "./florida-divorce-records-body";
 import { floridaFamilyLawAppellateMediationBodyHtml } from "./florida-family-law-appellate-mediation-body";
 import { whatCanBeUsedAgainstYouInADivorceInFloridaBodyHtml } from "./what-can-be-used-against-you-in-a-divorce-in-florida-body";
 import { howToAdoptAChildBodyHtml } from "./how-to-adopt-a-child-body";
@@ -61,6 +62,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "florida-divorce-records",
+    title: "Florida Divorce Records: How to Request and Understand Them",
+    metaTitle: "Florida Divorce Records: How to Request and Understand Them",
+    publishedDate: "2026-11-05",
+    date: "November 5, 2026",
+    dateISO: "2026-11-05",
+    excerpt:
+      "Learn where to request Florida divorce records, what details may help locate a case, and what public records can—and cannot—tell you.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-divorce-records-how-to-request-and-understand-them-973535.webp",
+    imageAlt: "Person reviewing divorce case documents at a desk",
+    body: floridaDivorceRecordsBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
