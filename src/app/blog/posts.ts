@@ -1,3 +1,4 @@
+import { howLongDoesADivorceTakeInFloridaBodyHtml } from "./how-long-does-a-divorce-take-in-florida-body";
 import { howToFileAMotionForContemptInFloridaFamilyLawBodyHtml } from "./how-to-file-a-motion-for-contempt-in-florida-family-law-body";
 import { financialAbuseInMarriageBodyHtml } from "./financial-abuse-in-marriage-body";
 import { floridaDivorceRecordsBodyHtml } from "./florida-divorce-records-body";
@@ -64,6 +65,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "how-long-does-a-divorce-take-in-florida",
+    title: "How Long Does a Divorce Take in Florida?",
+    metaTitle: "How Long Does a Divorce Take in Florida?",
+    publishedDate: "2026-11-09",
+    date: "November 9, 2026",
+    dateISO: "2026-11-09",
+    excerpt:
+      "How long does a divorce take in Florida? Compare agreed and contested timelines, the 20-day wait, and factors that change timing.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-long-does-a-divorce-take-in-florida-712672.webp",
+    imageAlt: "A couple reviewing divorce paperwork with an attorney at a conference table",
+    body: howLongDoesADivorceTakeInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
