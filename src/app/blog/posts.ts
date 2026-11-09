@@ -1,3 +1,4 @@
+import { financialAbuseInMarriageBodyHtml } from "./financial-abuse-in-marriage-body";
 import { floridaDivorceRecordsBodyHtml } from "./florida-divorce-records-body";
 import { floridaFamilyLawAppellateMediationBodyHtml } from "./florida-family-law-appellate-mediation-body";
 import { whatCanBeUsedAgainstYouInADivorceInFloridaBodyHtml } from "./what-can-be-used-against-you-in-a-divorce-in-florida-body";
@@ -62,6 +63,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "financial-abuse-in-marriage",
+    title: "Financial Abuse in Marriage: Legal Issues Florida Spouses Should Know",
+    metaTitle: "Financial Abuse in Marriage: Florida Legal Issues",
+    publishedDate: "2026-11-09",
+    date: "November 9, 2026",
+    dateISO: "2026-11-09",
+    excerpt:
+      "Learn how financial abuse in marriage may affect a Florida divorce, what records may help document concerns, and how to consider safer next steps.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/financial-abuse-in-marriage-legal-issues-florida-spouses-should-know-715440.webp",
+    imageAlt: "A person reviewing household financial papers at a table",
+    body: financialAbuseInMarriageBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
