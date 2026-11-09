@@ -1,3 +1,4 @@
+import { howToFileAMotionForContemptInFloridaFamilyLawBodyHtml } from "./how-to-file-a-motion-for-contempt-in-florida-family-law-body";
 import { financialAbuseInMarriageBodyHtml } from "./financial-abuse-in-marriage-body";
 import { floridaDivorceRecordsBodyHtml } from "./florida-divorce-records-body";
 import { floridaFamilyLawAppellateMediationBodyHtml } from "./florida-family-law-appellate-mediation-body";
@@ -63,6 +64,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "how-to-file-a-motion-for-contempt-in-florida-family-law",
+    title: "How to File a Motion for Contempt in Florida Family Law: Steps and Risks",
+    metaTitle: "How to File a Motion for Contempt in Florida Family Law",
+    publishedDate: "2026-11-09",
+    date: "November 9, 2026",
+    dateISO: "2026-11-09",
+    excerpt:
+      "Learn how to file a motion for contempt in Florida family law, what facts and documents to include, and how the court process depends on the order.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-to-file-a-motion-for-contempt-in-florida-family-law-steps-and-risks-279071.webp",
+    imageAlt: "Family law documents and a court order arranged on a desk",
+    body: howToFileAMotionForContemptInFloridaFamilyLawBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
