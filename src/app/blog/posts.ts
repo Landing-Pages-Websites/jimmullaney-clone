@@ -1,3 +1,4 @@
+import { alimonyLawyerJacksonvilleBodyHtml } from "./alimony-lawyer-jacksonville-body";
 import { alimonyAttorneyStJohnsBodyHtml } from "./alimony-attorney-st-johns-body";
 import { howLongDoesADivorceTakeInFloridaBodyHtml } from "./how-long-does-a-divorce-take-in-florida-body";
 import { howToFileAMotionForContemptInFloridaFamilyLawBodyHtml } from "./how-to-file-a-motion-for-contempt-in-florida-family-law-body";
@@ -66,6 +67,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "alimony-lawyer-jacksonville",
+    title: "How to Choose an Alimony Lawyer in Jacksonville",
+    metaTitle: "How an Alimony Lawyer in Jacksonville Can Help You",
+    publishedDate: "2026-11-10",
+    date: "November 10, 2026",
+    dateISO: "2026-11-10",
+    excerpt:
+      "Find out how to choose the right alimony lawyer Jacksonville for your divorce. Get tips on experience, communication, fees, and what to expect.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-to-choose-an-alimony-lawyer-in-jacksonville-668832.webp",
+    imageAlt: "Two alimony lawyers in Jacksonville discussing a case in their office.",
+    body: alimonyLawyerJacksonvilleBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
