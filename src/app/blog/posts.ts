@@ -1,3 +1,4 @@
+import { parentingCoordinatorCostFloridaBodyHtml } from "./parenting-coordinator-cost-florida-body";
 import { floridaCourtsFamilyLawFormsBodyHtml } from "./florida-courts-family-law-forms-body";
 import { alimonyLawyerJacksonvilleBodyHtml } from "./alimony-lawyer-jacksonville-body";
 import { alimonyAttorneyStJohnsBodyHtml } from "./alimony-attorney-st-johns-body";
@@ -68,6 +69,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "parenting-coordinator-cost-florida",
+    title: "Parenting Coordinator Cost Florida Guide",
+    metaTitle: "Parenting Coordinator Cost Florida Guide",
+    publishedDate: "2026-11-11",
+    date: "November 11, 2026",
+    dateISO: "2026-11-11",
+    excerpt:
+      "Parenting coordinator cost Florida depends on the court order, the fee split, and how often parents use the process. Questions to ask first.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/parenting-coordinator-cost-florida-guide-920386.webp",
+    imageAlt: "Parents reviewing parenting plan papers with a family law attorney in a Jacksonville office",
+    body: parentingCoordinatorCostFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
