@@ -1,3 +1,4 @@
+import { howToGetADivorceInFloridaForFreeBodyHtml } from "./how-to-get-a-divorce-in-florida-for-free-body";
 import { parentingCoordinatorCostFloridaBodyHtml } from "./parenting-coordinator-cost-florida-body";
 import { floridaCourtsFamilyLawFormsBodyHtml } from "./florida-courts-family-law-forms-body";
 import { alimonyLawyerJacksonvilleBodyHtml } from "./alimony-lawyer-jacksonville-body";
@@ -69,6 +70,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "how-to-get-a-divorce-in-florida-for-free",
+    title: "How to Get a Divorce in Florida for Free: Fees, Waivers, and Options",
+    metaTitle: "How to Get a Divorce in Florida for Free",
+    publishedDate: "2026-11-11",
+    date: "November 11, 2026",
+    dateISO: "2026-11-11",
+    excerpt:
+      "Learn how Florida filing-fee waivers work, where to find self-help forms, and how court costs differ from attorney fees when pursuing divorce.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-to-get-a-divorce-in-florida-for-free-fees-waivers-and-options-511637.webp",
+    imageAlt: "Person reviewing Florida divorce paperwork at a desk",
+    body: howToGetADivorceInFloridaForFreeBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
