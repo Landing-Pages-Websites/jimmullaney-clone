@@ -1,3 +1,4 @@
+import { howMuchDoesAdoptionCostInFloridaBodyHtml } from "./how-much-does-adoption-cost-in-florida-body";
 import { howToGetADivorceInFloridaForFreeBodyHtml } from "./how-to-get-a-divorce-in-florida-for-free-body";
 import { parentingCoordinatorCostFloridaBodyHtml } from "./parenting-coordinator-cost-florida-body";
 import { floridaCourtsFamilyLawFormsBodyHtml } from "./florida-courts-family-law-forms-body";
@@ -70,6 +71,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "how-much-does-adoption-cost-in-florida",
+    title: "How Much Does Adoption Cost in Florida? Fees and Planning Factors",
+    metaTitle: "How Much Does Adoption Cost in Florida?",
+    publishedDate: "2026-11-12",
+    date: "November 12, 2026",
+    dateISO: "2026-11-12",
+    excerpt:
+      "Learn what can affect adoption costs in Florida, from court filing expenses to professional services, and what to clarify before you begin.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-much-does-adoption-cost-in-florida-fees-and-planning-factors-926017.webp",
+    imageAlt: "Family sitting together at home discussing adoption paperwork",
+    body: howMuchDoesAdoptionCostInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
