@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/florida-child-support-calculator", priority: 0.9, changeFrequency: "yearly" },
     { path: "/videos", priority: 0.6, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
+    { path: "/blog/2026/11/how-much-does-adoption-cost-in-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/how-to-get-a-divorce-in-florida-for-free", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/parenting-coordinator-cost-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/florida-courts-family-law-forms", priority: 0.8, changeFrequency: "monthly" },
