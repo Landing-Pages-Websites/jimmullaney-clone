@@ -1,3 +1,4 @@
+import { guardianAdLitemFloridaBodyHtml } from "./guardian-ad-litem-florida-body";
 import { howMuchDoesAdoptionCostInFloridaBodyHtml } from "./how-much-does-adoption-cost-in-florida-body";
 import { howToGetADivorceInFloridaForFreeBodyHtml } from "./how-to-get-a-divorce-in-florida-for-free-body";
 import { parentingCoordinatorCostFloridaBodyHtml } from "./parenting-coordinator-cost-florida-body";
@@ -71,6 +72,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "guardian-ad-litem-florida",
+    title: "Guardian ad Litem Florida: Role, Appointment, and What Parents Should Know",
+    metaTitle: "Guardian ad Litem Florida: What Parents Should Know",
+    publishedDate: "2026-11-13",
+    date: "November 13, 2026",
+    dateISO: "2026-11-13",
+    excerpt:
+      "Learn what a guardian ad litem does in Florida family court, why one may be appointed, and how parents can prepare and participate constructively.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/guardian-ad-litem-florida-role-appointment-and-what-parents-should-know-868362.webp",
+    imageAlt: "Family law professional reviewing documents at a table with two parents",
+    body: guardianAdLitemFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
