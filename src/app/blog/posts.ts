@@ -1,39 +1,3 @@
-{
-    year: "2026",
-    month: "11",
-    slug: "jacksonville-guardianship-lawyer",
-    title: "Jacksonville Guardianship Lawyer: When to Seek Legal Guidance",
-    metaTitle: "Jacksonville Guardianship Lawyer: Legal Guidance",
-    publishedDate: "2026-11-16",
-    date: "November 16, 2026",
-    dateISO: "2026-11-16",
-    excerpt:
-      "Learn when guardianship questions may arise in Jacksonville, what a lawyer can help clarify, and how to prepare for a conversation about possible options.",
-    image:
-      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/jacksonville-guardianship-lawyer-when-to-seek-legal-guidance-103649.webp",
-    imageAlt: "Family members discussing legal options with an attorney in a calm office",
-    body: jacksonvilleGuardianshipLawyerBodyHtml.split(
-      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
-    ),
-  },
-import { jacksonvilleGuardianshipLawyerBodyHtml } from "./jacksonville-guardianship-lawyer-body";
-import { floridaGuardianshipProcessBodyHtml } from "./florida-guardianship-process-body";
-import { guardianAdLitemFloridaBodyHtml } from "./guardian-ad-litem-florida-body";
-import { howMuchDoesAdoptionCostInFloridaBodyHtml } from "./how-much-does-adoption-cost-in-florida-body";
-import { howToGetADivorceInFloridaForFreeBodyHtml } from "./how-to-get-a-divorce-in-florida-for-free-body";
-import { parentingCoordinatorCostFloridaBodyHtml } from "./parenting-coordinator-cost-florida-body";
-import { floridaCourtsFamilyLawFormsBodyHtml } from "./florida-courts-family-law-forms-body";
-import { alimonyLawyerJacksonvilleBodyHtml } from "./alimony-lawyer-jacksonville-body";
-import { alimonyAttorneyStJohnsBodyHtml } from "./alimony-attorney-st-johns-body";
-import { howLongDoesADivorceTakeInFloridaBodyHtml } from "./how-long-does-a-divorce-take-in-florida-body";
-import { howToFileAMotionForContemptInFloridaFamilyLawBodyHtml } from "./how-to-file-a-motion-for-contempt-in-florida-family-law-body";
-import { financialAbuseInMarriageBodyHtml } from "./financial-abuse-in-marriage-body";
-import { floridaDivorceRecordsBodyHtml } from "./florida-divorce-records-body";
-import { floridaFamilyLawAppellateMediationBodyHtml } from "./florida-family-law-appellate-mediation-body";
-import { whatCanBeUsedAgainstYouInADivorceInFloridaBodyHtml } from "./what-can-be-used-against-you-in-a-divorce-in-florida-body";
-import { howToAdoptAChildBodyHtml } from "./how-to-adopt-a-child-body";
-import { whatHappensToStockOptionsDuringADivorceBodyHtml } from "./what-happens-to-stock-options-during-a-divorce-body";
-import { howToDetermineBusinessValueDivorceBodyHtml } from "./how-to-determine-business-value-divorce-body";
 import { canMyWifeTakeMyCryptoInADivorceBodyHtml } from "./can-my-wife-take-my-crypto-in-a-divorce-body";
 import { divorceWhileInChapter7BankruptcyFloridaBodyHtml } from "./divorce-while-in-chapter-7-bankruptcy-florida-body";
 import { howHardIsItToSellAHouseDuringADivorceInFloridaBodyHtml } from "./how-hard-is-it-to-sell-a-house-during-a-divorce-in-florida-body";
@@ -90,9 +54,9 @@ export type BlogPost = {
 };
 
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
-
 export const posts: BlogPost[] = [
-  {
+
+{
     year: "2026",
     month: "11",
     slug: "jacksonville-guardianship-lawyer",
@@ -108,6 +72,7 @@ export const posts: BlogPost[] = [
     imageAlt: "Family members discussing legal options with an attorney in a calm office",
     body: jacksonvilleGuardianshipLawyerBodyHtml.split(
       /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    
     ),
   },
   {
@@ -126,7 +91,7 @@ export const posts: BlogPost[] = [
     imageAlt: "Family reviewing guardianship paperwork with an attorney at a desk",
     body: floridaGuardianshipProcessBodyHtml.split(
       /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
-    ),
+    
   },
   {
     year: "2026",
