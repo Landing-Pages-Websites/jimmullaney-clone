@@ -1,3 +1,21 @@
+import { jacksonvilleGuardianshipLawyerBodyHtml } from "./jacksonville-guardianship-lawyer-body";
+import { floridaGuardianshipProcessBodyHtml } from "./florida-guardianship-process-body";
+import { guardianAdLitemFloridaBodyHtml } from "./guardian-ad-litem-florida-body";
+import { howMuchDoesAdoptionCostInFloridaBodyHtml } from "./how-much-does-adoption-cost-in-florida-body";
+import { howToGetADivorceInFloridaForFreeBodyHtml } from "./how-to-get-a-divorce-in-florida-for-free-body";
+import { parentingCoordinatorCostFloridaBodyHtml } from "./parenting-coordinator-cost-florida-body";
+import { floridaCourtsFamilyLawFormsBodyHtml } from "./florida-courts-family-law-forms-body";
+import { alimonyLawyerJacksonvilleBodyHtml } from "./alimony-lawyer-jacksonville-body";
+import { alimonyAttorneyStJohnsBodyHtml } from "./alimony-attorney-st-johns-body";
+import { howLongDoesADivorceTakeInFloridaBodyHtml } from "./how-long-does-a-divorce-take-in-florida-body";
+import { howToFileAMotionForContemptInFloridaFamilyLawBodyHtml } from "./how-to-file-a-motion-for-contempt-in-florida-family-law-body";
+import { financialAbuseInMarriageBodyHtml } from "./financial-abuse-in-marriage-body";
+import { floridaDivorceRecordsBodyHtml } from "./florida-divorce-records-body";
+import { floridaFamilyLawAppellateMediationBodyHtml } from "./florida-family-law-appellate-mediation-body";
+import { whatCanBeUsedAgainstYouInADivorceInFloridaBodyHtml } from "./what-can-be-used-against-you-in-a-divorce-in-florida-body";
+import { howToAdoptAChildBodyHtml } from "./how-to-adopt-a-child-body";
+import { whatHappensToStockOptionsDuringADivorceBodyHtml } from "./what-happens-to-stock-options-during-a-divorce-body";
+import { howToDetermineBusinessValueDivorceBodyHtml } from "./how-to-determine-business-value-divorce-body";
 import { canMyWifeTakeMyCryptoInADivorceBodyHtml } from "./can-my-wife-take-my-crypto-in-a-divorce-body";
 import { divorceWhileInChapter7BankruptcyFloridaBodyHtml } from "./divorce-while-in-chapter-7-bankruptcy-florida-body";
 import { howHardIsItToSellAHouseDuringADivorceInFloridaBodyHtml } from "./how-hard-is-it-to-sell-a-house-during-a-divorce-in-florida-body";
@@ -1587,7 +1605,7 @@ export const posts: BlogPost[] = [
     ],
   },
   {
-    year: "2016",
+    ),    year: "2016",
     month: "05",
     slug: "are-you-making-your-divorce-more-expensive-than-it-has-to-be",
     title: "Are You Making Your Divorce More Expensive Than it Has to Be?",
