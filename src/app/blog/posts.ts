@@ -1,3 +1,21 @@
+{
+    year: "2026",
+    month: "11",
+    slug: "jacksonville-guardianship-lawyer",
+    title: "Jacksonville Guardianship Lawyer: When to Seek Legal Guidance",
+    metaTitle: "Jacksonville Guardianship Lawyer: Legal Guidance",
+    publishedDate: "2026-11-16",
+    date: "November 16, 2026",
+    dateISO: "2026-11-16",
+    excerpt:
+      "Learn when guardianship questions may arise in Jacksonville, what a lawyer can help clarify, and how to prepare for a conversation about possible options.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/jacksonville-guardianship-lawyer-when-to-seek-legal-guidance-103649.webp",
+    imageAlt: "Family members discussing legal options with an attorney in a calm office",
+    body: jacksonvilleGuardianshipLawyerBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
 import { jacksonvilleGuardianshipLawyerBodyHtml } from "./jacksonville-guardianship-lawyer-body";
 import { floridaGuardianshipProcessBodyHtml } from "./florida-guardianship-process-body";
 import { guardianAdLitemFloridaBodyHtml } from "./guardian-ad-litem-florida-body";
