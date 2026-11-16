@@ -110,8 +110,17 @@ export const posts: BlogPost[] = [
     body: floridaGuardianshipProcessBodyHtml.split(
       /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
     
-  },
+   
+
+
+
+
+      
+  
+    
+    ),   },
   {
+    
     year: "2026",
     month: "11",
     slug: "guardian-ad-litem-florida",
@@ -1604,8 +1613,8 @@ export const posts: BlogPost[] = [
       "In a <a href=\"/divorce/contested-divorce/\">litigated divorce case</a>, all of your social media posts, voice messages, text messages, videos, call logs, photos, blog comments and more are discoverable by your spouse's lawyer.",
     ],
   },
-  {
-    ),    year: "2016",
+      {
+year: "2016",
     month: "05",
     slug: "are-you-making-your-divorce-more-expensive-than-it-has-to-be",
     title: "Are You Making Your Divorce More Expensive Than it Has to Be?",
