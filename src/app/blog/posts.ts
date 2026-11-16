@@ -1,3 +1,4 @@
+import { jacksonvillePostnuptialAgreementLawyerBodyHtml } from "./jacksonville-postnuptial-agreement-lawyer-body";
 import { jacksonvilleGuardianshipLawyerBodyHtml } from "./jacksonville-guardianship-lawyer-body";
 import { floridaGuardianshipProcessBodyHtml } from "./florida-guardianship-process-body";
 import { guardianAdLitemFloridaBodyHtml } from "./guardian-ad-litem-florida-body";
@@ -74,6 +75,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "jacksonville-postnuptial-agreement-lawyer",
+    title: "Jacksonville Postnuptial Agreement Lawyer: When Legal Help May Fit",
+    metaTitle: "Jacksonville Postnuptial Agreement Lawyer",
+    publishedDate: "2026-11-16",
+    date: "November 16, 2026",
+    dateISO: "2026-11-16",
+    excerpt:
+      "Learn when a postnuptial agreement may help, how it differs from a prenup, and what a Jacksonville lawyer can review before you sign.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/jacksonville-postnuptial-agreement-lawyer-when-legal-help-may-fit-975313.webp",
+    imageAlt: "A married couple reviewing paperwork together with a family law attorney in a calm office setting",
+    body: jacksonvillePostnuptialAgreementLawyerBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
