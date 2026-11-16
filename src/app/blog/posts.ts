@@ -1,3 +1,4 @@
+import { floridaGuardianshipProcessBodyHtml } from "./florida-guardianship-process-body";
 import { guardianAdLitemFloridaBodyHtml } from "./guardian-ad-litem-florida-body";
 import { howMuchDoesAdoptionCostInFloridaBodyHtml } from "./how-much-does-adoption-cost-in-florida-body";
 import { howToGetADivorceInFloridaForFreeBodyHtml } from "./how-to-get-a-divorce-in-florida-for-free-body";
@@ -72,6 +73,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "florida-guardianship-process",
+    title: "Florida Guardianship Process: A Practical Step-by-Step Overview",
+    metaTitle: "Florida Guardianship Process: Practical Overview",
+    publishedDate: "2026-11-16",
+    date: "November 16, 2026",
+    dateISO: "2026-11-16",
+    excerpt:
+      "Learn the key stages of Florida’s guardianship process, from assessing need and filing a petition to notice, hearings, and ongoing court duties.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-guardianship-process-a-practical-step-by-step-overview-187860.webp",
+    imageAlt: "Family reviewing guardianship paperwork with an attorney at a desk",
+    body: floridaGuardianshipProcessBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
