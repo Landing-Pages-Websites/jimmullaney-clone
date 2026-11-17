@@ -1,3 +1,4 @@
+import { floridaFamilyLawMediationRulesBodyHtml } from "./florida-family-law-mediation-rules-body";
 import { jacksonvillePostnuptialAgreementLawyerBodyHtml } from "./jacksonville-postnuptial-agreement-lawyer-body";
 import { jacksonvilleGuardianshipLawyerBodyHtml } from "./jacksonville-guardianship-lawyer-body";
 import { floridaGuardianshipProcessBodyHtml } from "./florida-guardianship-process-body";
@@ -75,6 +76,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "florida-family-law-mediation-rules",
+    title: "Florida Family Law Mediation Rules",
+    metaTitle: "Florida Family Law Mediation Rules",
+    publishedDate: "2026-11-17",
+    date: "November 17, 2026",
+    dateISO: "2026-11-17",
+    excerpt:
+      "Florida family law mediation rules cover referral, attendance, confidentiality, and written agreements. Here is what parties should know.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-family-law-mediation-rules-877198.webp",
+    imageAlt: "A Florida family law attorney reviews mediation notes with a client before a conference.",
+    body: floridaFamilyLawMediationRulesBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
