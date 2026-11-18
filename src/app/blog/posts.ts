@@ -1,4 +1,5 @@
-import { childDependencyLawyerJacksonvilleBodyHtml } from "./child-dependency-lawyer-jacksonville-body";\nimport { floridaFamilyLawMediationRulesBodyHtml } from "./florida-family-law-mediation-rules-body";
+import { childDependencyLawyerJacksonvilleBodyHtml } from "./child-dependency-lawyer-jacksonville-body";
+import { floridaFamilyLawMediationRulesBodyHtml } from "./florida-family-law-mediation-rules-body";
 import { jacksonvillePostnuptialAgreementLawyerBodyHtml } from "./jacksonville-postnuptial-agreement-lawyer-body";
 import { jacksonvilleGuardianshipLawyerBodyHtml } from "./jacksonville-guardianship-lawyer-body";
 import { floridaGuardianshipProcessBodyHtml } from "./florida-guardianship-process-body";
@@ -76,6 +77,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "child-dependency-lawyer-jacksonville",
+    title: "Child Dependency Lawyer in Jacksonville: When a Parent May Need Counsel",
+    metaTitle: "Child Dependency Lawyer Jacksonville: When to Call",
+    publishedDate: "2026-11-18",
+    date: "November 18, 2026",
+    dateISO: "2026-11-18",
+    excerpt:
+      "Learn what Florida dependency proceedings involve, how they differ from family-law disputes, and when a parent may benefit from legal counsel.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/child-dependency-lawyer-in-jacksonville-when-a-parent-may-need-counsel-391837.webp",
+    imageAlt: "Parent speaking with an attorney about a Florida child dependency case",
+    body: childDependencyLawyerJacksonvilleBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
@@ -3246,21 +3265,3 @@ export function findPost(year: string, month: string, slug: string): BlogPost | 
   return posts.find((p) => p.year === year && p.month === month && p.slug === slug);
 }
 // // Deployment trigger force prod alias: 1785496590
-posts.unshift({
-  year: "2026",
-  month: "11",
-  slug: "child-dependency-lawyer-jacksonville",
-  title: "Child Dependency Lawyer in Jacksonville: When a Parent May Need Counsel",
-  metaTitle: "Child Dependency Lawyer Jacksonville: When to Call",
-  publishedDate: "2026-11-18",
-  date: "November 18, 2026",
-  dateISO: "2026-11-18",
-  excerpt:
-    "Learn what Florida dependency proceedings involve, how they differ from family-law disputes, and when a parent may benefit from legal counsel.",
-  image:
-    "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/child-dependency-lawyer-in-jacksonville-when-a-parent-may-need-counsel-391837.webp",
-  imageAlt: "Parent speaking with an attorney about a Florida child dependency case",
-  body: childDependencyLawyerJacksonvilleBodyHtml.split(
-    /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
-  ),
-});
