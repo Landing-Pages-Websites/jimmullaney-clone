@@ -1,3 +1,4 @@
+import { temporaryChildGuardianshipProcessInFloridaBodyHtml } from "./temporary-child-guardianship-process-in-florida-body";
 import { childDependencyLawyerJacksonvilleBodyHtml } from "./child-dependency-lawyer-jacksonville-body";
 import { floridaFamilyLawMediationRulesBodyHtml } from "./florida-family-law-mediation-rules-body";
 import { jacksonvillePostnuptialAgreementLawyerBodyHtml } from "./jacksonville-postnuptial-agreement-lawyer-body";
@@ -77,6 +78,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "temporary-child-guardianship-process-in-florida",
+    title: "Temporary Child Guardianship Process in Florida",
+    metaTitle: "Temporary Child Guardianship Process in Florida",
+    publishedDate: "2026-11-19",
+    date: "November 19, 2026",
+    dateISO: "2026-11-19",
+    excerpt:
+      "How the temporary child guardianship process in Florida works for relatives, including consent, court findings, orders, and how the arrangement can end.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/temporary-child-guardianship-process-in-florida-195204.webp",
+    imageAlt:
+      "Attorney reviewing temporary child guardianship papers with a parent and grandparent",
+    body: temporaryChildGuardianshipProcessInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",

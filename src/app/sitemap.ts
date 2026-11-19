@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/florida-child-support-calculator", priority: 0.9, changeFrequency: "yearly" },
     { path: "/videos", priority: 0.6, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
+    { path: "/blog/2026/11/temporary-child-guardianship-process-in-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/child-dependency-lawyer-jacksonville", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/florida-family-law-mediation-rules", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/jacksonville-postnuptial-agreement-lawyer", priority: 0.8, changeFrequency: "monthly" },
