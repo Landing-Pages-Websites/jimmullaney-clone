@@ -1,3 +1,4 @@
+import { parentingCoordinatorLawyerJacksonvilleBodyHtml } from "./parenting-coordinator-lawyer-jacksonville-body";
 import { temporaryChildGuardianshipProcessInFloridaBodyHtml } from "./temporary-child-guardianship-process-in-florida-body";
 import { childDependencyLawyerJacksonvilleBodyHtml } from "./child-dependency-lawyer-jacksonville-body";
 import { floridaFamilyLawMediationRulesBodyHtml } from "./florida-family-law-mediation-rules-body";
@@ -78,6 +79,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "parenting-coordinator-lawyer-jacksonville",
+    title: "Parenting Coordinator Lawyer Jacksonville",
+    metaTitle: "Parenting Coordinator Lawyer Jacksonville",
+    publishedDate: "2026-11-20",
+    date: "November 20, 2026",
+    dateISO: "2026-11-20",
+    excerpt:
+      "A parenting coordinator lawyer Jacksonville parents can call explains coordination, how it differs from mediation, and when it may not help.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/parenting-coordinator-lawyer-jacksonville-242735.webp",
+    imageAlt:
+      "Attorney meeting with two parents in a Jacksonville office to discuss a parenting plan",
+    body: parentingCoordinatorLawyerJacksonvilleBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
