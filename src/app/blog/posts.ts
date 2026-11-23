@@ -1,5 +1,6 @@
 import { parentingCoordinatorLawyerJacksonvilleBodyHtml } from "./parenting-coordinator-lawyer-jacksonville-body";
 import { howMuchDoesAFamilyLawLawyerCostBodyHtml } from "./how-much-does-a-family-law-lawyer-cost-body";
+import { floridaFamilyLawAppellateAttorneyFeesStandardsBodyHtml } from "./florida-family-law-appellate-attorney-fees-standards-body";
 import { temporaryChildGuardianshipProcessInFloridaBodyHtml } from "./temporary-child-guardianship-process-in-florida-body";
 import { childDependencyLawyerJacksonvilleBodyHtml } from "./child-dependency-lawyer-jacksonville-body";
 import { floridaFamilyLawMediationRulesBodyHtml } from "./florida-family-law-mediation-rules-body";
@@ -96,6 +97,25 @@ export const posts: BlogPost[] = [
     imageAlt:
       "Family law attorney reviewing documents with a client at a desk",
     body: howMuchDoesAFamilyLawLawyerCostBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
+  {
+    year: "2026",
+    month: "11",
+    slug: "florida-family-law-appellate-attorney-fees-standards",
+    title: "Florida Family Law Appellate Attorney Fees Standards",
+    metaTitle: "Florida Family Law Appellate Attorney Fees Standards",
+    publishedDate: "2026-11-23",
+    date: "November 23, 2026",
+    dateISO: "2026-11-23",
+    excerpt:
+      "Florida family law appellate attorney fees standards turn on relative resources, a timely motion, and no promise of an award.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/florida-family-law-appellate-attorney-fees-standards-262536.webp",
+    imageAlt:
+      "A quiet law-office table with a closed brief binder and a legal pad",
+    body: floridaFamilyLawAppellateAttorneyFeesStandardsBodyHtml.split(
       /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
     ),
   },
