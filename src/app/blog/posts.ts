@@ -1,4 +1,5 @@
 import { parentingCoordinatorLawyerJacksonvilleBodyHtml } from "./parenting-coordinator-lawyer-jacksonville-body";
+import { howMuchDoesAFamilyLawLawyerCostBodyHtml } from "./how-much-does-a-family-law-lawyer-cost-body";
 import { floridaFamilyLawAppellateAttorneyFeesStandardsBodyHtml } from "./florida-family-law-appellate-attorney-fees-standards-body";
 import { temporaryChildGuardianshipProcessInFloridaBodyHtml } from "./temporary-child-guardianship-process-in-florida-body";
 import { childDependencyLawyerJacksonvilleBodyHtml } from "./child-dependency-lawyer-jacksonville-body";
@@ -80,6 +81,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "how-much-does-a-family-law-lawyer-cost",
+    title: "How Much Does a Family Law Lawyer Cost in Florida?",
+    metaTitle: "How Much Does a Family Law Lawyer Cost in Florida?",
+    publishedDate: "2026-11-23",
+    date: "November 23, 2026",
+    dateISO: "2026-11-23",
+    excerpt:
+      "Learn what affects Florida family-law fees, how flat-fee and hourly billing differ, and which questions to ask before hiring an attorney.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-much-does-a-family-law-lawyer-cost-in-florida-914914.webp",
+    imageAlt:
+      "Family law attorney reviewing documents with a client at a desk",
+    body: howMuchDoesAFamilyLawLawyerCostBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
