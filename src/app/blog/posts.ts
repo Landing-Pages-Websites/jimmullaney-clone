@@ -9,6 +9,7 @@ import { jacksonvilleGuardianshipLawyerBodyHtml } from "./jacksonville-guardians
 import { floridaGuardianshipProcessBodyHtml } from "./florida-guardianship-process-body";
 import { guardianAdLitemFloridaBodyHtml } from "./guardian-ad-litem-florida-body";
 import { howMuchDoesAdoptionCostInFloridaBodyHtml } from "./how-much-does-adoption-cost-in-florida-body";
+import { howToAdoptANewbornInFloridaBodyHtml } from "./how-to-adopt-a-newborn-in-florida-body";
 import { howToGetADivorceInFloridaForFreeBodyHtml } from "./how-to-get-a-divorce-in-florida-for-free-body";
 import { parentingCoordinatorCostFloridaBodyHtml } from "./parenting-coordinator-cost-florida-body";
 import { floridaCourtsFamilyLawFormsBodyHtml } from "./florida-courts-family-law-forms-body";
@@ -82,6 +83,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "how-to-adopt-a-newborn-in-florida",
+    title: "How to Adopt a Newborn in Florida: Legal Pathways and Timing",
+    metaTitle: "How to Adopt a Newborn in Florida",
+    publishedDate: "2026-11-24",
+    date: "November 24, 2026",
+    dateISO: "2026-11-24",
+    excerpt:
+      "Learn the broad pathways to newborn adoption in Florida, what to clarify about consent and placement, and why timelines differ from case to case.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-to-adopt-a-newborn-in-florida-legal-pathways-and-timing-768279.webp",
+    imageAlt:
+      "Prospective parents speaking with an adoption professional in a calm office",
+    body: howToAdoptANewbornInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
