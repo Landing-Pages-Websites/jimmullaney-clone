@@ -54,6 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/videos", priority: 0.6, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     { path: "/blog/2026/11/how-to-cite-florida-family-law-rules-of-procedure", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/blog/2026/11/birth-parent-rights-florida-adoption", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/how-to-adopt-a-newborn-in-florida", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/parenting-coordinator-lawyer-jacksonville", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog/2026/11/temporary-child-guardianship-process-in-florida", priority: 0.8, changeFrequency: "monthly" },
