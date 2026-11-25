@@ -10,6 +10,7 @@ import { floridaGuardianshipProcessBodyHtml } from "./florida-guardianship-proce
 import { guardianAdLitemFloridaBodyHtml } from "./guardian-ad-litem-florida-body";
 import { howMuchDoesAdoptionCostInFloridaBodyHtml } from "./how-much-does-adoption-cost-in-florida-body";
 import { howToAdoptANewbornInFloridaBodyHtml } from "./how-to-adopt-a-newborn-in-florida-body";
+import { birthParentRightsFloridaAdoptionBodyHtml } from "./birth-parent-rights-florida-adoption-body";
 import { howToGetADivorceInFloridaForFreeBodyHtml } from "./how-to-get-a-divorce-in-florida-for-free-body";
 import { parentingCoordinatorCostFloridaBodyHtml } from "./parenting-coordinator-cost-florida-body";
 import { floridaCourtsFamilyLawFormsBodyHtml } from "./florida-courts-family-law-forms-body";
@@ -83,6 +84,25 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "birth-parent-rights-florida-adoption",
+    title: "Birth Parent Rights Florida Adoption: What Rights Do Birth Parents Have?",
+    metaTitle: "Birth Parent Rights in a Florida Adoption",
+    publishedDate: "2026-11-25",
+    date: "November 25, 2026",
+    dateISO: "2026-11-25",
+    excerpt:
+      "Learn what to clarify about consent, legal parentage, notice, and post-adoption contact in a Florida adoption, and where to find reliable legal guidance.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/birth-parent-rights-florida-adoption-what-rights-do-birth-parents-have-775619.webp",
+    imageAlt:
+      "A birth parent reviewing adoption paperwork with a supportive family-law professional at a desk",
+    body: birthParentRightsFloridaAdoptionBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
