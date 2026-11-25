@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/attorney/mullaney-a-james", priority: 0.9, changeFrequency: "monthly" },
     { path: "/contact", priority: 0.9, changeFrequency: "yearly" },
     { path: "/jacksonville-divorce-law-office", priority: 0.8, changeFrequency: "yearly" },
+    { path: "/nassau-county-family-law", priority: 0.8, changeFrequency: "monthly" },
 
     // Primary focus pages
     { path: "/divorce/uncontested-divorce-in-jacksonville-fl", priority: 1.0, changeFrequency: "monthly" },
