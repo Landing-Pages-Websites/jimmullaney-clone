@@ -11,6 +11,7 @@ import { guardianAdLitemFloridaBodyHtml } from "./guardian-ad-litem-florida-body
 import { howMuchDoesAdoptionCostInFloridaBodyHtml } from "./how-much-does-adoption-cost-in-florida-body";
 import { howToAdoptANewbornInFloridaBodyHtml } from "./how-to-adopt-a-newborn-in-florida-body";
 import { birthParentRightsFloridaAdoptionBodyHtml } from "./birth-parent-rights-florida-adoption-body";
+import { howDoesAdultAdoptionWorkInFloridaBodyHtml } from "./how-does-adult-adoption-work-in-florida-body";
 import { howToGetADivorceInFloridaForFreeBodyHtml } from "./how-to-get-a-divorce-in-florida-for-free-body";
 import { parentingCoordinatorCostFloridaBodyHtml } from "./parenting-coordinator-cost-florida-body";
 import { floridaCourtsFamilyLawFormsBodyHtml } from "./florida-courts-family-law-forms-body";
@@ -84,6 +85,24 @@ export type BlogPost = {
 import { flatFeeUncontestedDivorceBody } from "./flat-fee-body";
 
 export const posts: BlogPost[] = [
+  {
+    year: "2026",
+    month: "11",
+    slug: "adult-adoption-process-florida",
+    title: "How Does Adult Adoption Work in Florida?",
+    metaTitle: "Adult Adoption Process Florida: Steps and Consent",
+    publishedDate: "2026-11-26",
+    date: "November 26, 2026",
+    dateISO: "2026-11-26",
+    excerpt:
+      "Understand the adult adoption process in Florida, including consent, court filings, preparation, and legal effects to discuss before you begin.",
+    image:
+      "https://zleague-public-prod.s3.us-east-2.amazonaws.com/article_images/8426fda1-fea5-46d1-b5fa-ffacfc441a6d/how-does-adult-adoption-work-in-florida-364779.webp",
+    imageAlt: "An adult child and parent sharing a warm moment at home",
+    body: howDoesAdultAdoptionWorkInFloridaBodyHtml.split(
+      /(?=<(?:p|h2|h3|ol|ul|table|figure)(?:\s|>))/,
+    ),
+  },
   {
     year: "2026",
     month: "11",
